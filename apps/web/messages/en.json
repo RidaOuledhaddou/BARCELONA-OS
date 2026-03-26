@@ -1,0 +1,73 @@
+{
+  "nav": {
+    "brand": "Barcelona OS",
+    "mapExplorer": "Map Explorer",
+    "taxiFleet": "Taxi Fleet",
+    "hotels": "Hotels",
+    "analytics": "Analytics",
+    "signIn": "Sign In",
+    "signUp": "Sign Up"
+  },
+  "hero": {
+    "eyebrow": "Spatial city intelligence",
+    "title": "Barcelona, Orchestrated.",
+    "description": "Restore the city command surface you were building: live taxis, hotel discovery, maps, analytics, and a luxury visual language tuned for desktop and mobile.",
+    "primaryCta": "Start Journey",
+    "secondaryCta": "View Platform",
+    "status": "Night mode: Gold on black. Sunny mode: gold on warm stone."
+  },
+  "features": {
+    "title": "Services running on one civic operating layer",
+    "description": "A premium landing experience built around real-time mobility, hospitality, and city signals.",
+    "taxis": {
+      "title": "Real-time Taxis",
+      "body": "Monitor fleet health, pickup density, and dispatch availability across the city in one live canvas."
+    },
+    "hotels": {
+      "title": "Smart Hotel Discovery",
+      "body": "Blend availability, district intelligence, and premium inventory with a fast spatial search flow."
+    },
+    "analytics": {
+      "title": "City Analytics",
+      "body": "Surface demand patterns, occupancy, and operational KPIs in seconds with executive-grade visuals."
+    }
+  },
+  "stats": {
+    "activeTaxis": "Active Taxis",
+    "dispatchTime": "Avg. Dispatch Time",
+    "rooms": "Available Rooms"
+  },
+  "showcase": {
+    "title": "Spatial Search",
+    "subtitle": "Semantic search over the city grid",
+    "placeholder": "Boutique hotels near Eixample with fast taxi pickup",
+    "result": "Best match: Eixample North - 2 min taxi ETA"
+  },
+  "mobileMock": {
+    "title": "Citizen Experience",
+    "body": "A phone-first arrival flow with a premium card stack, live status, and clear handoff between map, taxi, and hotel moments.",
+    "notification": "Driver arriving in 2 min"
+  },
+  "footer": {
+    "platform": "Platform",
+    "company": "Company",
+    "legal": "Legal",
+    "systemStatus": "System Status",
+    "status": "Dispatcher signal healthy",
+    "about": "Barcelona City OS is a luxury civic platform for dispatch, hotels, mobility, and live urban intelligence."
+  },
+  "auth": {
+    "loginTitle": "Welcome Back",
+    "loginBody": "Sign in to recover your command center, live dashboards, and premium city workflows.",
+    "signupTitle": "Create Account",
+    "signupBody": "Open a new operator account for taxis, hotels, and analytics.",
+    "email": "Email address",
+    "password": "Password",
+    "name": "Full name",
+    "company": "Company",
+    "submitLogin": "Enter Platform",
+    "submitSignup": "Create Account",
+    "switchToSignup": "Need an account?",
+    "switchToLogin": "Already have an account?"
+  }
+}

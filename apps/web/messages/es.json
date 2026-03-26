@@ -1,0 +1,73 @@
+{
+  "nav": {
+    "brand": "Barcelona OS",
+    "mapExplorer": "Mapa",
+    "taxiFleet": "Flota Taxi",
+    "hotels": "Hoteles",
+    "analytics": "Analitica",
+    "signIn": "Entrar",
+    "signUp": "Registro"
+  },
+  "hero": {
+    "eyebrow": "Inteligencia espacial urbana",
+    "title": "Barcelona, Orquestada.",
+    "description": "Recupera la superficie de control que estabas construyendo: taxis en vivo, descubrimiento de hoteles, mapas, analitica y un lenguaje visual premium para escritorio y movil.",
+    "primaryCta": "Iniciar viaje",
+    "secondaryCta": "Ver plataforma",
+    "status": "Modo noche: oro sobre negro. Modo sol: oro sobre piedra calida."
+  },
+  "features": {
+    "title": "Servicios sobre una sola capa operativa urbana",
+    "description": "Una experiencia premium centrada en movilidad, hospitalidad y senales de ciudad en tiempo real.",
+    "taxis": {
+      "title": "Taxis en tiempo real",
+      "body": "Observa la salud de la flota, densidad de recogidas y disponibilidad de despacho en un solo lienzo vivo."
+    },
+    "hotels": {
+      "title": "Descubrimiento inteligente de hoteles",
+      "body": "Combina disponibilidad, inteligencia por distrito e inventario premium con una busqueda espacial rapida."
+    },
+    "analytics": {
+      "title": "Analitica de ciudad",
+      "body": "Muestra demanda, ocupacion y KPIs operativos en segundos con visuales de nivel ejecutivo."
+    }
+  },
+  "stats": {
+    "activeTaxis": "Taxis activos",
+    "dispatchTime": "Tiempo medio de despacho",
+    "rooms": "Habitaciones disponibles"
+  },
+  "showcase": {
+    "title": "Busqueda espacial",
+    "subtitle": "Busqueda semantica sobre la malla urbana",
+    "placeholder": "Hoteles boutique cerca de Eixample con taxi rapido",
+    "result": "Mejor resultado: Eixample Norte - taxi en 2 min"
+  },
+  "mobileMock": {
+    "title": "Experiencia ciudadana",
+    "body": "Un flujo movil premium con estado en vivo y transicion clara entre mapa, taxi y hotel.",
+    "notification": "Conductor llega en 2 min"
+  },
+  "footer": {
+    "platform": "Plataforma",
+    "company": "Compania",
+    "legal": "Legal",
+    "systemStatus": "Estado del sistema",
+    "status": "Senal del dispatcher saludable",
+    "about": "Barcelona City OS es una plataforma civica premium para despacho, hoteles, movilidad e inteligencia urbana."
+  },
+  "auth": {
+    "loginTitle": "Bienvenido de nuevo",
+    "loginBody": "Entra para recuperar tu centro de mando, paneles en vivo y flujos premium.",
+    "signupTitle": "Crear cuenta",
+    "signupBody": "Abre una nueva cuenta operativa para taxis, hoteles y analitica.",
+    "email": "Correo electronico",
+    "password": "Contrasena",
+    "name": "Nombre completo",
+    "company": "Compania",
+    "submitLogin": "Entrar a la plataforma",
+    "submitSignup": "Crear cuenta",
+    "switchToSignup": "Necesitas una cuenta?",
+    "switchToLogin": "Ya tienes una cuenta?"
+  }
+}

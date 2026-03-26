@@ -1,0 +1,11 @@
+{
+  "name": "@os/dispatcher",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/dev.ps1",
+    "build": "echo dispatcher build placeholder",
+    "lint": "echo dispatcher lint placeholder",
+    "typecheck": "echo dispatcher typecheck placeholder"
+  }
+}

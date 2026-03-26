@@ -1,0 +1,87 @@
+@import "tailwindcss";
+@source "../../packages/ui/src";
+
+:root {
+  --bg: #090909;
+  --bg-rgb: 9 9 9;
+  --fg: #f6f2e9;
+  --fg-rgb: 246 242 233;
+  --surface-rgb: 19 18 16;
+  --surface-strong-rgb: 28 26 22;
+  --border-rgb: 166 134 61;
+  --accent: #d4af37;
+  --accent-rgb: 212 175 55;
+  --accent-soft-rgb: 242 211 138;
+  --muted-rgb: 201 188 157;
+}
+
+html.midnight {
+  --bg: #090909;
+  --bg-rgb: 9 9 9;
+  --fg: #f6f2e9;
+  --fg-rgb: 246 242 233;
+  --surface-rgb: 19 18 16;
+  --surface-strong-rgb: 28 26 22;
+  --border-rgb: 166 134 61;
+  --accent: #d4af37;
+  --accent-rgb: 212 175 55;
+  --accent-soft-rgb: 242 211 138;
+  --muted-rgb: 201 188 157;
+}
+
+html.sunny {
+  --bg: #f4ede0;
+  --bg-rgb: 244 237 224;
+  --fg: #765318;
+  --fg-rgb: 118 83 24;
+  --surface-rgb: 255 250 242;
+  --surface-strong-rgb: 244 232 208;
+  --border-rgb: 176 141 48;
+  --accent: #d4af37;
+  --accent-rgb: 212 175 55;
+  --accent-soft-rgb: 226 114 91;
+  --muted-rgb: 153 123 72;
+}
+
+html,
+body {
+  min-height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(circle at top, rgb(var(--accent-rgb) / 0.16), transparent 30%),
+    radial-gradient(circle at bottom right, rgb(var(--accent-soft-rgb) / 0.14), transparent 25%),
+    var(--bg);
+  color: var(--fg);
+  transition:
+    background-color 1s ease,
+    color 1s ease,
+    border-color 1s ease;
+  font-feature-settings: "rlig" 1, "calt" 1;
+}
+
+* {
+  border-color: rgb(var(--border-rgb) / 0.35);
+}
+
+::selection {
+  background: rgb(var(--accent-rgb) / 0.35);
+  color: var(--fg);
+}
+
+.glass-panel {
+  background: rgb(var(--surface-rgb) / 0.66);
+  backdrop-filter: blur(24px);
+}
+
+.gold-ring {
+  box-shadow:
+    0 0 0 1px rgb(var(--accent-rgb) / 0.24),
+    0 14px 32px rgb(var(--accent-rgb) / 0.18);
+}
+
+.text-muted {
+  color: rgb(var(--muted-rgb));
+}

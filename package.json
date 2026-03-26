@@ -1,0 +1,16 @@
+{
+  "name": "barcelona-city-os",
+  "private": true,
+  "packageManager": "pnpm@9.15.4",
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "dev": "corepack pnpm --filter @os/web --filter @os/dispatcher --parallel run dev",
+    "build": "corepack pnpm -r run build",
+    "lint": "corepack pnpm -r run lint",
+    "typecheck": "corepack pnpm -r run typecheck"
+  },
+  "devDependencies": {
+    "turbo": "*",
+    "typescript": "*"
+  }
+}
