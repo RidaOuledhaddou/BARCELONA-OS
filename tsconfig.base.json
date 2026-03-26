@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "ignoreDeprecations": "6.0",
     "target": "ES2022",
     "lib": ["ES2022", "DOM", "DOM.Iterable"],
     "module": "ESNext",
@@ -11,13 +10,6 @@
     "jsx": "preserve",
     "noEmit": true,
     "skipLibCheck": true,
-    "incremental": true,
-    "baseUrl": ".",
-    "paths": {
-      "@os/ui": ["packages/ui/src/index.ts"],
-      "@os/ui/*": ["packages/ui/src/*"],
-      "@os/types": ["packages/types/src/index.ts"],
-      "@os/types/*": ["packages/types/src/*"]
-    }
+    "incremental": true
   }
 }

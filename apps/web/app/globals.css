@@ -8,10 +8,10 @@
   --fg-rgb: 246 242 233;
   --surface-rgb: 19 18 16;
   --surface-strong-rgb: 28 26 22;
-  --border-rgb: 166 134 61;
-  --accent: #d4af37;
-  --accent-rgb: 212 175 55;
-  --accent-soft-rgb: 242 211 138;
+  --border-rgb: 105 145 214;
+  --accent: #7aa8ff;
+  --accent-rgb: 122 168 255;
+  --accent-soft-rgb: 164 214 255;
   --muted-rgb: 201 188 157;
 }
 
@@ -22,10 +22,10 @@ html.midnight {
   --fg-rgb: 246 242 233;
   --surface-rgb: 19 18 16;
   --surface-strong-rgb: 28 26 22;
-  --border-rgb: 166 134 61;
-  --accent: #d4af37;
-  --accent-rgb: 212 175 55;
-  --accent-soft-rgb: 242 211 138;
+  --border-rgb: 105 145 214;
+  --accent: #7aa8ff;
+  --accent-rgb: 122 168 255;
+  --accent-soft-rgb: 164 214 255;
   --muted-rgb: 201 188 157;
 }
 
@@ -36,20 +36,27 @@ html.sunny {
   --fg-rgb: 118 83 24;
   --surface-rgb: 255 250 242;
   --surface-strong-rgb: 244 232 208;
-  --border-rgb: 176 141 48;
-  --accent: #d4af37;
-  --accent-rgb: 212 175 55;
-  --accent-soft-rgb: 226 114 91;
+  --border-rgb: 114 160 222;
+  --accent: #5f9dff;
+  --accent-rgb: 95 157 255;
+  --accent-soft-rgb: 145 221 255;
   --muted-rgb: 153 123 72;
 }
 
-html,
-body {
+html {
   min-height: 100%;
   scroll-behavior: smooth;
+  background: var(--bg);
+}
+
+html.midnight {
+  background: #000;
 }
 
 body {
+  min-height: 100%;
+  scroll-behavior: smooth;
+  margin-inline: clamp(0.75rem, 4vw, 2rem);
   background:
     radial-gradient(circle at top, rgb(var(--accent-rgb) / 0.16), transparent 30%),
     radial-gradient(circle at bottom right, rgb(var(--accent-soft-rgb) / 0.14), transparent 25%),
@@ -60,6 +67,10 @@ body {
     color 1s ease,
     border-color 1s ease;
   font-feature-settings: "rlig" 1, "calt" 1;
+}
+
+html.midnight body {
+  background: #000;
 }
 
 * {

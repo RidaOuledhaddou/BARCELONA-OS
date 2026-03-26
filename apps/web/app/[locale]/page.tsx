@@ -1,6 +1,6 @@
 import { Suspense } from "react";
 import type { DispatchJob } from "@os/types";
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 import { Link } from "../../i18n/navigation";
 import { BentoCard } from "../_components/BentoCard";
 import { CitizenExperienceMock } from "../_components/CitizenExperienceMock";
@@ -36,15 +36,16 @@ export default async function LandingPage() {
   const tHero = await getTranslations("hero");
   const tFeatures = await getTranslations("features");
   const tStats = await getTranslations("stats");
+  const locale = await getLocale();
 
   return (
     <>
       <main className="mx-auto w-full max-w-7xl">
         <section
           id="map-explorer"
-          className="grid items-start gap-10 pt-14 md:grid-cols-[0.92fr_1.08fr] md:pt-16"
+          className="grid items-start gap-8 pt-14 md:grid-cols-[1fr_0.78fr] md:pt-16"
         >
-          <div className="max-w-2xl">
+          <div className="max-w-xl">
             <div className="inline-flex items-center gap-2 rounded-full border border-[rgb(var(--accent-rgb)/0.18)] bg-[rgb(var(--surface-rgb)/0.62)] px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-[rgb(var(--accent-rgb))]">
               <span className="h-2 w-2 rounded-full bg-[rgb(var(--accent-rgb))]" />
               {tHero("eyebrow")}
@@ -97,18 +98,7 @@ export default async function LandingPage() {
             </div>
           </div>
 
-          <div>
-            <div className="md:hidden">
-              <div className="glass-panel gold-ring relative overflow-hidden rounded-[32px] border border-[rgb(var(--accent-rgb)/0.18)] p-6">
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_25%_20%,rgba(212,175,55,0.18),transparent_30%),radial-gradient(circle_at_75%_60%,rgba(226,114,91,0.16),transparent_25%)]" />
-                <div className="relative rounded-[28px] border border-[rgb(var(--accent-rgb)/0.18)] bg-[rgb(var(--surface-strong-rgb)/0.78)] p-5">
-                  <div className="h-48 rounded-[24px] bg-[linear-gradient(180deg,rgba(212,175,55,0.18),rgba(0,0,0,0)),radial-gradient(circle_at_60%_40%,rgba(212,175,55,0.2),rgba(0,0,0,0))]" />
-                  <div className="mt-4 text-sm text-[rgb(var(--fg-rgb)/0.72)]">
-                    Mobile fallback map for battery-friendly spatial preview.
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div className="flex justify-center md:justify-end">
             <Suspense fallback={<HeroSceneSkeleton />}>
               <HeroScene />
             </Suspense>
@@ -116,6 +106,7 @@ export default async function LandingPage() {
         </section>
 
         <LiveStatsTicker
+          locale={locale}
           items={[
             { label: tStats("activeTaxis"), value: 1420 },
             { label: tStats("dispatchTime"), value: 2.4, suffix: "m", decimals: 1 },

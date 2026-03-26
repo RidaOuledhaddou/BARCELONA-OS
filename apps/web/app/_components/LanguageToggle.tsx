@@ -3,7 +3,7 @@
 import { useLocale } from "next-intl";
 import { usePathname, useRouter } from "../../i18n/navigation";
 
-const locales = ["en", "es", "ca"] as const;
+const locales = ["en", "es"] as const;
 
 export function LanguageToggle({ className = "" }: { className?: string }) {
   const locale = useLocale();

@@ -9,14 +9,14 @@ type StatItem = {
   decimals?: number;
 };
 
-function formatValue(value: number, decimals = 0) {
-  return value.toLocaleString(undefined, {
+function formatValue(value: number, decimals = 0, locale = "en") {
+  return value.toLocaleString(locale, {
     minimumFractionDigits: decimals,
     maximumFractionDigits: decimals,
   });
 }
 
-export function LiveStatsTicker({ items }: { items: StatItem[] }) {
+export function LiveStatsTicker({ items, locale }: { items: StatItem[]; locale: string }) {
   const ref = useRef<HTMLDivElement>(null);
   const [active, setActive] = useState(false);
   const [values, setValues] = useState(items.map(() => 0));
@@ -72,7 +72,7 @@ export function LiveStatsTicker({ items }: { items: StatItem[] }) {
         {items.map((item, index) => (
           <div key={item.label} className="rounded-3xl bg-[rgb(var(--surface-strong-rgb)/0.6)] px-5 py-4">
             <div className="text-2xl font-semibold text-[var(--fg)] md:text-3xl">
-              {formatValue(values[index] ?? 0, item.decimals)}
+              {formatValue(values[index] ?? 0, item.decimals, locale)}
               {item.suffix ?? ""}
             </div>
             <div className="mt-2 text-sm text-[rgb(var(--fg-rgb)/0.72)]">

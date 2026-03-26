@@ -2,8 +2,7 @@
 
 import { AnimatePresence, motion } from "framer-motion";
 import { Moon, SunMedium } from "lucide-react";
-import { useTheme } from "next-themes";
-import { storageKey } from "../../app/theme-provider";
+import { storageKey, useTheme } from "../../app/theme-provider";
 import { Button } from "../ui/button";
 
 export function ThemeToggle() {
