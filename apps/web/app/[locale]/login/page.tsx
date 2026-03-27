@@ -5,23 +5,23 @@ export default async function LoginPage() {
   const t = await getTranslations("auth");
 
   return (
-    <main className="relative min-h-[calc(100vh-5rem)] w-full max-w-full overflow-x-hidden overflow-y-hidden bg-[var(--auth-bg)] text-[var(--auth-primary)]">
+    <main className="relative -mt-5 min-h-[calc(100vh-5rem)] w-full max-w-full overflow-x-hidden overflow-y-auto bg-[var(--auth-bg)] pb-28 pt-0 text-[var(--auth-primary)] md:-mt-9 lg:overflow-y-hidden lg:pb-8">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_22%,rgb(var(--auth-divider-rgb)/0.1),transparent_24%),radial-gradient(circle_at_78%_66%,rgb(var(--auth-divider-rgb)/0.05),transparent_22%)]" />
-      <div className="relative mx-auto grid min-h-[calc(100vh-5rem)] w-full max-w-[1050px] items-center gap-8 overflow-hidden px-6 md:grid-cols-[minmax(0,1fr)_minmax(360px,430px)] md:gap-10 lg:gap-12">
-        <div className="relative flex items-start justify-center py-8 md:py-10">
+      <div className="relative mx-auto grid w-full max-w-[1100px] grid-cols-1 items-start gap-10 overflow-hidden px-6 pt-[15px] md:pt-[15px] lg:min-h-[calc(100vh-5rem)] lg:grid-cols-[minmax(0,1fr)_minmax(420px,460px)] lg:items-center lg:gap-14 lg:pt-[15px]">
+        <div className="relative flex items-start justify-center py-0">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_40%_34%,rgb(var(--auth-divider-rgb)/0.14),transparent_16%),radial-gradient(circle_at_58%_60%,rgb(var(--auth-divider-rgb)/0.05),transparent_18%)]" />
           <div className="relative z-10 flex w-full max-w-[30rem] flex-col items-start">
-            <div className="rounded-full border border-[rgb(var(--auth-primary-rgb)/0.22)] bg-[rgb(var(--auth-google-bg-rgb)/0.06)] px-3.5 py-1.5 text-[10px] font-medium uppercase tracking-[0.3em] text-[var(--auth-primary)] backdrop-blur-xl">
+            <div className="rounded-full border border-[rgb(var(--auth-primary-rgb)/0.22)] bg-[rgb(var(--auth-google-bg-rgb)/0.06)] px-3.5 py-1.5 text-[10px] font-medium uppercase tracking-[0.3em] text-[var(--auth-primary)] backdrop-blur-xl auth-reveal-title">
               Access Layer
             </div>
-            <h1 className="mt-5 whitespace-nowrap [font-family:var(--font-geist)] bg-[linear-gradient(180deg,var(--auth-primary)_0%,var(--auth-primary)_62%,var(--auth-secondary)_100%)] bg-clip-text text-[2.9rem] font-extrabold leading-[0.92] tracking-[-0.04em] text-transparent md:text-[3.4rem] lg:text-[3.8rem]">
+            <h1 className="mt-5 whitespace-nowrap [font-family:var(--font-geist)] text-[2.9rem] font-bold leading-[1.1] tracking-[-0.02em] text-[var(--auth-primary)] auth-reveal-title md:text-[3.4rem] lg:text-[3.8rem]">
               {t("loginTitle")}
             </h1>
-            <p className="mt-4 max-w-[22rem] text-[14px] leading-7 text-[var(--auth-secondary)] md:text-[15px]">
+            <p className="mt-6 max-w-[400px] text-[14px] font-normal leading-[1.6] text-[rgb(var(--auth-primary-rgb)/0.7)] auth-reveal-title md:text-[15px]">
               {t("loginBody")}
             </p>
 
-            <div className="relative mt-5 flex h-[122px] w-[122px] items-center justify-center self-center md:mt-6 md:h-[148px] md:w-[148px]">
+            <div className="relative mt-5 flex h-[122px] w-[122px] items-center justify-center self-center auth-reveal-cube md:mt-6 md:h-[148px] md:w-[148px]">
               <div className="cyber-cube relative h-[78px] w-[78px] md:h-[96px] md:w-[96px]">
                 <div
                   className="cyber-cube-face"
@@ -74,7 +74,7 @@ export default async function LoginPage() {
                   </label>
                   <input
                     type="email"
-                    className="w-full rounded-xl border border-[rgb(var(--auth-input-border-rgb)/var(--auth-input-border-alpha))] bg-[rgb(var(--auth-input-bg-rgb)/var(--auth-input-bg-alpha))] px-3.5 py-2.5 text-[14px] text-[var(--auth-primary)] outline-none shadow-[inset_0_1px_0_rgba(255,255,255,0.04)] transition placeholder:text-[var(--auth-primary)]/70 focus:border-white focus:shadow-[0_0_0_2px_rgba(255,255,255,0.08)]"
+                    className="h-12 w-full border-0 border-b border-[rgb(var(--auth-input-border-rgb)/var(--auth-input-border-alpha))] bg-transparent px-0 py-2.5 text-[14px] text-[var(--auth-primary)] outline-none transition placeholder:text-[var(--auth-primary)]/70 focus:border-[rgb(var(--auth-input-border-rgb)/0.92)]"
                     placeholder="operator@barcelonaos.com"
                   />
                 </div>
@@ -85,7 +85,7 @@ export default async function LoginPage() {
                   </label>
                   <input
                     type="password"
-                    className="w-full rounded-xl border border-[rgb(var(--auth-input-border-rgb)/var(--auth-input-border-alpha))] bg-[rgb(var(--auth-input-bg-rgb)/var(--auth-input-bg-alpha))] px-3.5 py-2.5 text-[14px] text-[var(--auth-primary)] outline-none shadow-[inset_0_1px_0_rgba(255,255,255,0.04)] transition placeholder:text-[var(--auth-primary)]/70 focus:border-white focus:shadow-[0_0_0_2px_rgba(255,255,255,0.08)]"
+                    className="h-12 w-full border-0 border-b border-[rgb(var(--auth-input-border-rgb)/var(--auth-input-border-alpha))] bg-transparent px-0 py-2.5 text-[14px] text-[var(--auth-primary)] outline-none transition placeholder:text-[var(--auth-primary)]/70 focus:border-[rgb(var(--auth-input-border-rgb)/0.92)]"
                     placeholder="••••••••"
                   />
                 </div>
@@ -93,7 +93,7 @@ export default async function LoginPage() {
 
               <button
                 type="submit"
-                className="flex h-10 w-full items-center justify-center rounded-xl border border-[rgb(var(--auth-input-border-rgb)/0.26)] px-4 text-[13px] font-semibold text-[var(--auth-main-btn-fg)] transition hover:-translate-y-0.5 active:scale-[0.98] hover:brightness-105"
+                className="flex h-12 w-full items-center justify-center rounded-xl border border-[rgb(var(--auth-input-border-rgb)/0.26)] px-4 text-[14px] font-semibold text-[var(--auth-main-btn-fg)] transition hover:-translate-y-0.5 active:scale-[0.98] hover:brightness-105"
                 style={{
                   background: "var(--auth-main-btn-bg)",
                   boxShadow:
@@ -107,7 +107,7 @@ export default async function LoginPage() {
 
               <button
                 type="button"
-                className="flex h-10 w-full items-center justify-center gap-2.5 rounded-xl border border-[rgb(var(--auth-input-border-rgb)/0.2)] bg-[rgb(var(--auth-google-bg-rgb)/var(--auth-google-bg-alpha))] px-4 text-[13px] font-medium text-[var(--auth-google-text)] shadow-[inset_0_1px_0_rgba(255,255,255,0.12),0_10px_24px_rgba(0,0,0,0.22)] backdrop-blur-[12px] transition hover:-translate-y-0.5 hover:bg-[rgb(var(--auth-google-bg-rgb)/0.05)]"
+                className="flex h-12 w-full items-center justify-center gap-2.5 rounded-xl border border-[rgb(var(--auth-input-border-rgb)/0.2)] bg-[rgb(var(--auth-google-bg-rgb)/var(--auth-google-bg-alpha))] px-4 text-[14px] font-medium text-[var(--auth-google-text)] shadow-[inset_0_1px_0_rgba(255,255,255,0.12),0_10px_24px_rgba(0,0,0,0.22)] backdrop-blur-[12px] transition hover:-translate-y-0.5 hover:bg-[rgb(var(--auth-google-bg-rgb)/0.05)]"
               >
                 <span className="flex h-5 w-5 items-center justify-center rounded-full border border-[rgba(229,227,214,0.18)] bg-[radial-gradient(circle_at_30%_30%,rgba(255,255,255,0.22),rgba(165,162,131,0.12))] text-[9px] font-semibold text-white shadow-[0_4px_12px_rgba(0,0,0,0.2)]">
                   G
