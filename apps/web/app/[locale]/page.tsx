@@ -36,6 +36,7 @@ export default async function LandingPage() {
   const tHero = await getTranslations("hero");
   const tFeatures = await getTranslations("features");
   const tStats = await getTranslations("stats");
+  const tLanding = await getTranslations("landing");
   const locale = await getLocale();
 
   return (
@@ -105,6 +106,18 @@ export default async function LandingPage() {
           </div>
         </section>
 
+        <section className="mx-auto mt-4 w-full max-w-[1050px]">
+          <div className="h-px w-full bg-[rgb(165,162,131,0.2)]" />
+          <div className="mt-10">
+            <h2 className="text-3xl font-medium tracking-[-0.03em] text-[rgb(var(--fg-rgb))] md:text-4xl">
+              {tLanding("provenanceTitle")}
+            </h2>
+            <p className="mt-5 max-w-[760px] text-base leading-8 text-[rgb(var(--muted-rgb))] md:text-lg">
+              {tLanding("provenanceBody")}
+            </p>
+          </div>
+        </section>
+
         <LiveStatsTicker
           locale={locale}
           items={[
@@ -150,6 +163,82 @@ export default async function LandingPage() {
           <LazySpatialSearch />
         </section>
 
+        <section className="mx-auto mt-20 w-full max-w-[1050px]">
+          <div className="rounded-[32px] border border-[rgb(var(--stroke-rgb)/var(--stroke-alpha))] bg-[rgb(var(--surface-rgb)/var(--surface-alpha))] p-7 md:p-10">
+            <div className="text-xs font-semibold uppercase tracking-[0.32em] text-[rgb(var(--secondary-rgb))]">
+              {tLanding("signatureEyebrow")}
+            </div>
+            <h3 className="mt-4 text-3xl font-semibold tracking-[-0.03em] text-[rgb(var(--fg-rgb))] md:text-4xl">
+              {tLanding("signatureTitle")}
+            </h3>
+
+            <div className="mt-8 space-y-6">
+              {[
+                {
+                  heading: tLanding("signatureStep1Title"),
+                  body: tLanding("signatureStep1Body"),
+                },
+                {
+                  heading: tLanding("signatureStep2Title"),
+                  body: tLanding("signatureStep2Body"),
+                },
+                {
+                  heading: tLanding("signatureStep3Title"),
+                  body: tLanding("signatureStep3Body"),
+                },
+              ].map((step, index) => (
+                <div key={step.heading} className="flex gap-4">
+                  <div className="flex w-8 flex-col items-center">
+                    <span className="mt-1 h-2.5 w-2.5 rounded-full bg-[#58562d]" />
+                    {index < 2 ? (
+                      <span className="mt-2 h-full w-px bg-[rgb(165,162,131,0.2)]" />
+                    ) : null}
+                  </div>
+                  <div className="pb-2">
+                    <div className="text-lg font-semibold text-[rgb(var(--fg-rgb))]">
+                      {step.heading}
+                    </div>
+                    <p className="mt-2 max-w-[760px] text-base leading-7 text-[rgb(var(--muted-rgb))]">
+                      {step.body}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="mx-auto mt-20 w-full max-w-[1050px]">
+          <div className="rounded-[32px] border border-[rgb(var(--stroke-rgb)/var(--stroke-alpha))] bg-[rgb(var(--surface-rgb)/var(--surface-alpha))] p-7 md:p-10">
+            <div className="text-xs font-semibold uppercase tracking-[0.32em] text-[rgb(var(--secondary-rgb))]">
+              {tLanding("testimonyEyebrow")}
+            </div>
+            <h3 className="mt-4 text-3xl font-semibold tracking-[-0.03em] text-[rgb(var(--fg-rgb))] md:text-4xl">
+              {tLanding("testimonyTitle")}
+            </h3>
+
+            <div className="mt-8 grid gap-6 md:grid-cols-2">
+              <blockquote className="rounded-[24px] border border-[rgb(var(--stroke-rgb)/var(--stroke-alpha))] bg-[rgb(var(--surface-rgb)/var(--surface-strong-alpha))] p-6">
+                <p className="text-lg leading-8 text-[rgb(var(--fg-rgb))]">
+                  {tLanding("testimonyQuote1")}
+                </p>
+                <footer className="mt-5 text-sm uppercase tracking-[0.2em] text-[rgb(var(--secondary-rgb))]">
+                  {tLanding("testimonyAuthor1")}
+                </footer>
+              </blockquote>
+
+              <blockquote className="rounded-[24px] border border-[rgb(var(--stroke-rgb)/var(--stroke-alpha))] bg-[rgb(var(--surface-rgb)/var(--surface-strong-alpha))] p-6">
+                <p className="text-lg leading-8 text-[rgb(var(--fg-rgb))]">
+                  {tLanding("testimonyQuote2")}
+                </p>
+                <footer className="mt-5 text-sm uppercase tracking-[0.2em] text-[rgb(var(--secondary-rgb))]">
+                  {tLanding("testimonyAuthor2")}
+                </footer>
+              </blockquote>
+            </div>
+          </div>
+        </section>
+
         <section className="mt-20">
           <CitizenExperienceMock />
         </section>
@@ -157,7 +246,7 @@ export default async function LandingPage() {
         <GoldStandardFooter />
       </main>
 
-      <FooterFloatingControls />
+      <FooterFloatingControls showScrollToTop={false} />
     </>
   );
 }

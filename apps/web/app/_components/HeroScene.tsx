@@ -3,6 +3,7 @@
 import { useMemo, useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Line, OrbitControls, Sparkles } from "@react-three/drei";
+import { useTranslations } from "next-intl";
 import * as THREE from "three";
 import { useTheme } from "../theme-provider";
 
@@ -142,7 +143,13 @@ function DarkNetworkScene() {
   );
 }
 
-function DarkNetworkIllustration() {
+function DarkNetworkIllustration({
+  primaryLabel,
+  secondaryLabel,
+}: {
+  primaryLabel: string;
+  secondaryLabel: string;
+}) {
   return (
     <>
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_18%,rgb(var(--accent-soft-rgb)/0.18),transparent_20%),radial-gradient(circle_at_78%_26%,rgb(var(--accent-rgb)/0.14),transparent_22%),radial-gradient(circle_at_50%_74%,rgb(var(--accent-soft-rgb)/0.08),transparent_26%)]" />
@@ -151,10 +158,10 @@ function DarkNetworkIllustration() {
       <div className="relative flex h-full flex-col justify-between">
         <div className="flex items-center justify-between">
           <div className="rounded-full border border-[rgb(var(--stroke-rgb)/var(--stroke-alpha))] bg-[rgb(var(--surface-rgb)/var(--surface-alpha))] px-3 py-2 text-[10px] font-medium uppercase tracking-[0.28em] text-[rgb(var(--muted-rgb))]">
-            Live network
+            {primaryLabel}
           </div>
           <div className="rounded-full border border-[rgb(var(--stroke-rgb)/var(--stroke-alpha))] bg-[rgb(var(--surface-rgb)/var(--surface-alpha))] px-3 py-2 text-[10px] font-medium uppercase tracking-[0.28em] text-[rgb(var(--secondary-rgb))]">
-            24ms sync
+            {secondaryLabel}
           </div>
         </div>
 
@@ -267,16 +274,22 @@ function SunnyOrganicScene() {
   );
 }
 
-function SunnyOrganicIllustration() {
+function SunnyOrganicIllustration({
+  primaryLabel,
+  secondaryLabel,
+}: {
+  primaryLabel: string;
+  secondaryLabel: string;
+}) {
   return (
     <>
       <div className="relative flex h-full flex-col justify-between">
         <div className="flex items-center justify-between">
           <div className="rounded-full border border-[rgb(var(--stroke-rgb)/var(--stroke-alpha))] bg-[rgb(var(--surface-rgb)/0.38)] px-3 py-2 text-[10px] font-medium uppercase tracking-[0.28em] text-[rgb(var(--secondary-rgb))]">
-            Organic grid
+            {primaryLabel}
           </div>
           <div className="rounded-full border border-[rgb(var(--stroke-rgb)/var(--stroke-alpha))] bg-[rgb(var(--surface-rgb)/0.38)] px-3 py-2 text-[10px] font-medium uppercase tracking-[0.28em] text-[rgb(var(--secondary-rgb))]">
-            Clay render
+            {secondaryLabel}
           </div>
         </div>
 
@@ -298,6 +311,7 @@ function SunnyOrganicIllustration() {
 }
 
 export function HeroScene() {
+  const tHero = useTranslations("hero");
   const { resolvedTheme } = useTheme();
   const isSunny = resolvedTheme === "sunny";
 
@@ -308,7 +322,17 @@ export function HeroScene() {
         isSunny ? "bg-[rgb(var(--bg-rgb))]" : "",
       ].join(" ")}
     >
-      {isSunny ? <SunnyOrganicIllustration /> : <DarkNetworkIllustration />}
+      {isSunny ? (
+        <SunnyOrganicIllustration
+          primaryLabel={tHero("sunnyPrimary")}
+          secondaryLabel={tHero("sunnySecondary")}
+        />
+      ) : (
+        <DarkNetworkIllustration
+          primaryLabel={tHero("syncPrimary")}
+          secondaryLabel={tHero("syncSecondary")}
+        />
+      )}
     </div>
   );
 }

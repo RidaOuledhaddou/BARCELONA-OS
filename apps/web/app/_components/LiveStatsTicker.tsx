@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { useTranslations } from "next-intl";
 
 type StatItem = {
   label: string;
@@ -17,6 +18,7 @@ function formatValue(value: number, decimals = 0, locale = "en") {
 }
 
 export function LiveStatsTicker({ items, locale }: { items: StatItem[]; locale: string }) {
+  const tStats = useTranslations("stats");
   const ref = useRef<HTMLDivElement>(null);
   const [active, setActive] = useState(false);
   const [values, setValues] = useState(items.map(() => 0));
@@ -66,7 +68,7 @@ export function LiveStatsTicker({ items, locale }: { items: StatItem[]; locale: 
     >
       <div className="flex flex-wrap items-center gap-3 text-xs font-semibold uppercase tracking-[0.28em] text-[rgb(var(--secondary-rgb))]">
         <span className="inline-flex h-2.5 w-2.5 animate-pulse rounded-full bg-[rgb(var(--secondary-rgb))] shadow-[0_0_18px_rgb(var(--secondary-rgb)/0.35)]" />
-        Live Data
+        {tStats("pulse")}
       </div>
       <div className="premium-grid mt-6 md:grid-cols-3">
         {items.map((item, index) => (

@@ -55,6 +55,17 @@
   --auth-cube-glow: rgba(165, 162, 131, 0.16);
   --auth-cube-ground: rgba(165, 162, 131, 0.28);
   --signup-cube-ground: rgba(255, 255, 255, 0.26);
+  --terms-bg: #000000;
+  --terms-title: #a5a283;
+  --terms-subheading: #e5e3d6;
+  --terms-body: rgb(229 227 214 / 0.85);
+  --terms-return: rgb(165 162 131 / 0.6);
+  --terms-border-rgb: 165 162 131;
+  --terms-border-alpha: 0.1;
+  --terms-section-border: rgba(165, 162, 131, 0.08);
+  --terms-title-shadow: 0 0 15px rgba(165, 162, 131, 0.2);
+  --terms-mobile-border-alpha: 0.1;
+  --terms-header-bg-rgb: 0 0 0;
 }
 
 html.midnight {
@@ -111,6 +122,17 @@ html.midnight {
   --auth-cube-glow: rgba(165, 162, 131, 0.16);
   --auth-cube-ground: rgba(165, 162, 131, 0.28);
   --signup-cube-ground: rgba(255, 255, 255, 0.26);
+  --terms-bg: #000000;
+  --terms-title: #a5a283;
+  --terms-subheading: #e5e3d6;
+  --terms-body: rgb(229 227 214 / 0.85);
+  --terms-return: rgb(165 162 131 / 0.6);
+  --terms-border-rgb: 165 162 131;
+  --terms-border-alpha: 0.1;
+  --terms-section-border: rgba(165, 162, 131, 0.08);
+  --terms-title-shadow: 0 0 15px rgba(165, 162, 131, 0.2);
+  --terms-mobile-border-alpha: 0.1;
+  --terms-header-bg-rgb: 0 0 0;
 }
 
 html.sunny {
@@ -165,6 +187,17 @@ html.sunny {
   --auth-cube-glow: rgba(165, 162, 131, 0.14);
   --auth-cube-ground: rgba(165, 162, 131, 0.18);
   --signup-cube-ground: rgba(165, 162, 131, 0.2);
+  --terms-bg: #e5e3d6;
+  --terms-title: #452821;
+  --terms-subheading: #58562d;
+  --terms-body: rgb(69 40 33 / 0.85);
+  --terms-return: rgb(69 40 33 / 0.7);
+  --terms-border-rgb: 165 162 131;
+  --terms-border-alpha: 0.3;
+  --terms-section-border: rgba(69, 40, 33, 0.1);
+  --terms-title-shadow: none;
+  --terms-mobile-border-alpha: 0.2;
+  --terms-header-bg-rgb: 229 227 214;
 }
 
 html {
@@ -300,6 +333,15 @@ html.sunny body::before {
   }
 }
 
+@keyframes terms-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .cyber-divider {
   transform-origin: top center;
   animation: auth-divider-draw 1.1s ease forwards;
@@ -323,6 +365,23 @@ html.sunny body::before {
 .auth-reveal-form {
   opacity: 0;
   animation: auth-reveal 520ms ease 240ms forwards;
+}
+
+.terms-shell {
+  will-change: opacity;
+  animation: terms-fade 420ms ease both;
+}
+
+.terms-fade {
+  will-change: opacity;
+  animation: terms-fade 260ms ease both;
+}
+
+html.midnight .join-fleet-button {
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.22),
+    0 0 20px rgba(88, 86, 45, 0.3),
+    0 14px 40px rgb(var(--button-shadow-rgb) / 0.22) !important;
 }
 
 .cyber-cube {

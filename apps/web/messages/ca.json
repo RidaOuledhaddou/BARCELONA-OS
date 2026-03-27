@@ -14,7 +14,11 @@
     "description": "Recupera la superficie de control que estaves construint: taxis en viu, descoberta d'hotels, mapes, analitica i un llenguatge visual premium per escriptori i mobil.",
     "primaryCta": "Comencar viatge",
     "secondaryCta": "Veure plataforma",
-    "status": "Mode nit: or sobre negre. Mode sol: or sobre pedra calida."
+    "status": "Mode nit: or sobre negre. Mode sol: or sobre pedra calida.",
+    "syncPrimary": "Sincronia Absoluta",
+    "syncSecondary": "Vantage Royale",
+    "sunnyPrimary": "Malla Curada",
+    "sunnySecondary": "Ritme Barcelona"
   },
   "features": {
     "title": "Serveis sobre una sola capa operativa urbana",
@@ -35,7 +39,8 @@
   "stats": {
     "activeTaxis": "Taxis actius",
     "dispatchTime": "Temps mitja de dispatch",
-    "rooms": "Habitacions disponibles"
+    "rooms": "Habitacions disponibles",
+    "pulse": "Pols de la Ciutat"
   },
   "showcase": {
     "title": "Cerca espacial",
@@ -48,13 +53,44 @@
     "body": "Un flux mobil premium amb estat en viu i una transicio clara entre mapa, taxi i hotel.",
     "notification": "Conductor arriba en 2 min"
   },
+  "landing": {
+    "provenanceTitle": "Nascut a Barcelona. Creat per a la singularitat.",
+    "provenanceBody": "Royale One va neixer per transformar l'estandard en all bespoke. Som els arquitectes silenciosos dels trajectes mes elegants de la ciutat, amb coneixement local refinat i un tracte discret.",
+    "signatureEyebrow": "El Servei Signature",
+    "signatureTitle": "De la consulta a la distincio.",
+    "signatureStep1Title": "La Consulta",
+    "signatureStep1Body": "Expressi el seu desig a traves de la nostra cerca espacial.",
+    "signatureStep2Title": "La Curadoria",
+    "signatureStep2Body": "La nostra intel.ligencia alinea els actius mes distingits de la ciutat.",
+    "signatureStep3Title": "L'Arribada",
+    "signatureStep3Body": "Visqui la transicio de la informacio a la distincio.",
+    "testimonyEyebrow": "Reflexions de Membres",
+    "testimonyTitle": "El Testimoni Royale",
+    "testimonyQuote1": "\"L'unic vantage que enten el pols de l'Eixample tan be com jo.\"",
+    "testimonyAuthor1": "A. Ortega, Membre Privat.",
+    "testimonyQuote2": "\"La discrecio es troba amb la sincronia absoluta. Una obra mestra d'orquestracio urbana.\"",
+    "testimonyAuthor2": "M. Serra, Director Executiu."
+  },
   "footer": {
-    "platform": "Plataforma",
-    "company": "Empresa",
-    "legal": "Legal",
-    "systemStatus": "Estat del sistema",
-    "status": "Senyal del dispatcher saludable",
-    "about": "Barcelona City OS es una plataforma civica premium per a dispatch, hotels, mobilitat i intel.ligencia urbana."
+    "brandTitle": "Royale One",
+    "brandBody": "Refinant l'Experiencia Urbana.",
+    "suiteTitle": "La Suite",
+    "suiteItem1": "Atlas Urba",
+    "suiteItem2": "Mobilitat",
+    "suiteItem3": "Residencies",
+    "suiteItem4": "Previsio",
+    "companyTitle": "Empresa",
+    "companyItem1": "La Nostra Historia",
+    "companyItem2": "La Flota",
+    "companyItem3": "Programa de Partners",
+    "companyItem4": "Premsa",
+    "legalTitle": "Legal",
+    "legalItem1": "Termes del Servei",
+    "legalItem2": "Politica de Privacitat",
+    "legalItem3": "Preferencia de Cookies",
+    "legalItem4": "Sobirania de Dades",
+    "legalItem5": "Carta Etica",
+    "bottomRow": "© 2026 Royale One Concierge. Tots els drets reservats. Integritat del Sistema Confirmada."
   },
   "auth": {
     "loginTitle": "Benvingut de nou",

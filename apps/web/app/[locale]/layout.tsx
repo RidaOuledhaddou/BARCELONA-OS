@@ -2,6 +2,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
+import { FooterFloatingControls } from "../_components/FooterFloatingControls";
 import { Navbar } from "../../components/layout/navbar";
 import { routing } from "../../i18n/routing";
 
@@ -29,6 +30,7 @@ export default async function LocaleLayout({
     <NextIntlClientProvider messages={messages}>
       <Navbar />
       <div className="px-5 pb-32 pt-20 sm:px-8 md:pt-24">{children}</div>
+      <FooterFloatingControls showLanguageToggle={false} />
     </NextIntlClientProvider>
   );
 }

@@ -1,60 +1,96 @@
 {
   "nav": {
-    "brand": "Barcelona OS",
-    "mapExplorer": "Mapa",
-    "taxiFleet": "Flota Taxi",
+    "brand": "Royale One",
+    "mapExplorer": "Atlas de la Ciudad",
+    "taxiFleet": "Movilidad",
     "hotels": "Hoteles",
-    "analytics": "Analitica",
-    "signIn": "Entrar",
-    "signUp": "Registro"
+    "analytics": "Prospectiva",
+    "signIn": "Acceso Miembros",
+    "signUp": "Unirse a la Flota"
   },
   "hero": {
-    "eyebrow": "Inteligencia espacial urbana",
+    "eyebrow": "Una perspectiva de alta conserjería.",
     "title": "Barcelona, Orquestada.",
-    "description": "Recupera la superficie de control que estabas construyendo: taxis en vivo, descubrimiento de hoteles, mapas, analitica y un lenguaje visual premium para escritorio y movil.",
-    "primaryCta": "Iniciar viaje",
-    "secondaryCta": "Ver plataforma",
-    "status": "Modo noche: oro sobre negro. Modo sol: oro sobre piedra calida."
+    "description": "La intersección entre la intuición humana y el pulso urbano. Concebido para quienes exigen distinción en cada trayecto.",
+    "primaryCta": "Iniciar Consulta",
+    "secondaryCta": "Explorar la Suite",
+    "status": "Barcelona inspira cada detalle. Precision serena en cada recorrido.",
+    "syncPrimary": "Sincronia Absoluta",
+    "syncSecondary": "Vantage Royale",
+    "sunnyPrimary": "Sincronía Maestra",
+    "sunnySecondary": "Ritmo Barcelona"
   },
   "features": {
-    "title": "Servicios sobre una sola capa operativa urbana",
-    "description": "Una experiencia premium centrada en movilidad, hospitalidad y senales de ciudad en tiempo real.",
+    "title": "Servicios a medida. Una sola vision orquestada.",
+    "description": "Conciergerie urbana con exclusividad, legado y precision.",
     "taxis": {
-      "title": "Taxis en tiempo real",
-      "body": "Observa la salud de la flota, densidad de recogidas y disponibilidad de despacho en un solo lienzo vivo."
+      "title": "Movilidad Orquestada",
+      "body": "Una perspectiva maestra de la flota mas distinguida de la ciudad, en perfecta armonia."
     },
     "hotels": {
-      "title": "Descubrimiento inteligente de hoteles",
-      "body": "Combina disponibilidad, inteligencia por distrito e inventario premium con una busqueda espacial rapida."
+      "title": "Alojamiento Privado",
+      "body": "Estancias a medida en las direcciones mas prestigiosas de Barcelona."
     },
     "analytics": {
-      "title": "Analitica de ciudad",
-      "body": "Muestra demanda, ocupacion y KPIs operativos en segundos con visuales de nivel ejecutivo."
+      "title": "Prevision Ejecutiva",
+      "body": "Transformando la complejidad urbana en una inteligencia depurada y artesanal."
     }
   },
   "stats": {
-    "activeTaxis": "Taxis activos",
-    "dispatchTime": "Tiempo medio de despacho",
-    "rooms": "Habitaciones disponibles"
+    "activeTaxis": "Vehiculos en Movimiento",
+    "dispatchTime": "Tiempo medio de llegada",
+    "rooms": "Santuarios Reservados",
+    "pulse": "Pulso de la Ciudad"
   },
   "showcase": {
     "title": "Busqueda espacial",
-    "subtitle": "Busqueda semantica sobre la malla urbana",
-    "placeholder": "Hoteles boutique cerca de Eixample con taxi rapido",
-    "result": "Mejor resultado: Eixample Norte - taxi en 2 min"
+    "subtitle": "Una lectura bespoke del pulso urbano",
+    "placeholder": "Localice un refugio sereno en el Eixample...",
+    "result": "Seleccion Royale: Eixample Norte - llegada en 2 min"
   },
   "mobileMock": {
-    "title": "Experiencia ciudadana",
-    "body": "Un flujo movil premium con estado en vivo y transicion clara entre mapa, taxi y hotel.",
+    "title": "La Perspectiva del Miembro",
+    "body": "Un servicio movil sobrio y elegante, con transiciones claras entre trayecto, llegada y estancia.",
     "notification": "Conductor llega en 2 min"
   },
+  "landing": {
+    "provenanceTitle": "Nacido en Barcelona. Creado para lo singular.",
+    "provenanceBody": "Royale One nace para transformar lo convencional en lo sublime. Somos los arquitectos silenciosos de los trayectos más elegantes de la ciudad, uniendo conocimiento local refinado con cercanía y discreción.",
+    "signatureEyebrow": "El Servicio Signature",
+    "signatureTitle": "De la consulta a la distincion.",
+    "signatureStep1Title": "La Consulta",
+    "signatureStep1Body": "Exprese su deseo a traves de nuestra busqueda espacial.",
+    "signatureStep2Title": "La Curaduria",
+    "signatureStep2Body": "Nuestra inteligencia alinea los activos mas distinguidos de la ciudad.",
+    "signatureStep3Title": "La Llegada",
+    "signatureStep3Body": "Viva la transicion de la informacion a la distincion.",
+    "testimonyEyebrow": "Reflexiones de Miembros",
+    "testimonyTitle": "El Testimonio Royale",
+    "testimonyQuote1": "\"La única perspectiva que comprende el pulso del Eixample tan bien como yo.\"",
+    "testimonyAuthor1": "A. Ortega, Miembro Privado.",
+    "testimonyQuote2": "\"La discrecion se une a la sincronia absoluta. Una obra maestra de orquestacion urbana.\"",
+    "testimonyAuthor2": "M. Serra, Director Ejecutivo."
+  },
   "footer": {
-    "platform": "Plataforma",
-    "company": "Compania",
-    "legal": "Legal",
-    "systemStatus": "Estado del sistema",
-    "status": "Senal del dispatcher saludable",
-    "about": "Barcelona City OS es una plataforma civica premium para despacho, hoteles, movilidad e inteligencia urbana."
+    "brandTitle": "Royale One",
+    "brandBody": "Refinando la Experiencia Urbana.",
+    "suiteTitle": "La Suite",
+    "suiteItem1": "Atlas Urbano",
+    "suiteItem2": "Movilidad",
+    "suiteItem3": "Residencias",
+    "suiteItem4": "Prospectiva",
+    "companyTitle": "La Firma",
+    "companyItem1": "Nuestra Historia",
+    "companyItem2": "La Flota",
+    "companyItem3": "Alianzas Estratégicas",
+    "companyItem4": "Prensa",
+    "legalTitle": "Legal",
+    "legalItem1": "Condiciones de Uso",
+    "legalItem2": "Politica de Privacidad",
+    "legalItem3": "Preferencias de Cookies",
+    "legalItem4": "Soberania de Datos",
+    "legalItem5": "Carta Etica",
+    "bottomRow": "© 2026 Royale One Concierge. Todos los derechos reservados. Integridad del Sistema Confirmada."
   },
   "auth": {
     "loginTitle": "Bienvenido",

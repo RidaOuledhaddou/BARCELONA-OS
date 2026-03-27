@@ -1,60 +1,96 @@
 {
   "nav": {
-    "brand": "Barcelona OS",
-    "mapExplorer": "Map Explorer",
-    "taxiFleet": "Taxi Fleet",
-    "hotels": "Hotels",
-    "analytics": "Analytics",
-    "signIn": "Sign In",
-    "signUp": "Sign Up"
+    "brand": "Royale One",
+    "mapExplorer": "City Atlas",
+    "taxiFleet": "Mobility",
+    "hotels": "Residences",
+    "analytics": "Foresight",
+    "signIn": "Member Access",
+    "signUp": "Join the Fleet"
   },
   "hero": {
-    "eyebrow": "Spatial city intelligence",
-    "title": "Barcelona, Orchestrated.",
-    "description": "Restore the city command surface you were building: live taxis, hotel discovery, maps, analytics, and a luxury visual language tuned for desktop and mobile.",
-    "primaryCta": "Start Journey",
-    "secondaryCta": "View Platform",
-    "status": "Night mode: Gold on black. Sunny mode: gold on warm stone."
+    "eyebrow": "A singular concierge vantage",
+    "title": "Barcelona, Refined.",
+    "description": "An elegant intersection of human intuition and urban motion. Designed for those who seek uniqueness in every journey.",
+    "primaryCta": "Begin Inquiry",
+    "secondaryCta": "Explore the Suite",
+    "status": "Discretion in every detail. Distinction in every move.",
+    "syncPrimary": "Absolute Synchrony",
+    "syncSecondary": "Royale Vantage",
+    "sunnyPrimary": "Curated Grid",
+    "sunnySecondary": "Barcelona Rhythm"
   },
   "features": {
-    "title": "Services running on one civic operating layer",
-    "description": "A premium landing experience built around real-time mobility, hospitality, and city signals.",
+    "title": "Bespoke services. One orchestrated vantage.",
+    "description": "Handcrafted concierge intelligence for mobility, habitation, and executive clarity.",
     "taxis": {
-      "title": "Real-time Taxis",
-      "body": "Monitor fleet health, pickup density, and dispatch availability across the city in one live canvas."
+      "title": "Orchestrated Mobility",
+      "body": "A master perspective of the city's premier fleet, moving in silent harmony."
     },
     "hotels": {
-      "title": "Smart Hotel Discovery",
-      "body": "Blend availability, district intelligence, and premium inventory with a fast spatial search flow."
+      "title": "Curated Habitation",
+      "body": "Bespoke stays aligned with Barcelona's most distinguished addresses."
     },
     "analytics": {
-      "title": "City Analytics",
-      "body": "Surface demand patterns, occupancy, and operational KPIs in seconds with executive-grade visuals."
+      "title": "Executive Foresight",
+      "body": "Transforming urban complexity into clear, handcrafted intelligence."
     }
   },
   "stats": {
-    "activeTaxis": "Active Taxis",
+    "activeTaxis": "Vessels in Motion",
     "dispatchTime": "Avg. Dispatch Time",
-    "rooms": "Available Rooms"
+    "rooms": "Reserved Sanctuaries",
+    "pulse": "Urban Pulse"
   },
   "showcase": {
     "title": "Spatial Search",
-    "subtitle": "Semantic search over the city grid",
-    "placeholder": "Boutique hotels near Eixample with fast taxi pickup",
-    "result": "Best match: Eixample North - 2 min taxi ETA"
+    "subtitle": "A bespoke lens over the city",
+    "placeholder": "Seek a quiet retreat in Eixample...",
+    "result": "The Royale Selection: Eixample North - 2 min arrival"
   },
   "mobileMock": {
-    "title": "Citizen Experience",
-    "body": "A phone-first arrival flow with a premium card stack, live status, and clear handoff between map, taxi, and hotel moments.",
+    "title": "The Member Perspective",
+    "body": "A handheld concierge moment with clear transitions between routes, arrivals, and distinguished stays.",
     "notification": "Driver arriving in 2 min"
   },
+  "landing": {
+    "provenanceTitle": "Born in Barcelona. Crafted for the Individual.",
+    "provenanceBody": "Royale One was conceived to transform the standardized into the bespoke. We are the silent architects of the city's most elegant journeys, blending refined local knowledge with a warm, discreet touch.",
+    "signatureEyebrow": "The Signature Service",
+    "signatureTitle": "From inquiry to distinction.",
+    "signatureStep1Title": "The Inquiry",
+    "signatureStep1Body": "Express your desire through our spatial search.",
+    "signatureStep2Title": "The Curation",
+    "signatureStep2Body": "Our intelligence aligns the city's premier assets.",
+    "signatureStep3Title": "The Arrival",
+    "signatureStep3Body": "Experience the transition from data to distinction.",
+    "testimonyEyebrow": "Member Reflections",
+    "testimonyTitle": "The Royale Testimony",
+    "testimonyQuote1": "\"The only vantage point that understands the pulse of Eixample as well as I do.\"",
+    "testimonyAuthor1": "A. Ortega, Private Member.",
+    "testimonyQuote2": "\"Discretion meets absolute synchrony. A masterpiece of urban orchestration.\"",
+    "testimonyAuthor2": "M. Serra, Executive Director."
+  },
   "footer": {
-    "platform": "Platform",
-    "company": "Company",
-    "legal": "Legal",
-    "systemStatus": "System Status",
-    "status": "Dispatcher signal healthy",
-    "about": "Barcelona City OS is a luxury civic platform for dispatch, hotels, mobility, and live urban intelligence."
+    "brandTitle": "Royale One",
+    "brandBody": "Refining the Urban Experience.",
+    "suiteTitle": "The Suite",
+    "suiteItem1": "City Atlas",
+    "suiteItem2": "Mobility",
+    "suiteItem3": "Residences",
+    "suiteItem4": "Foresight",
+    "companyTitle": "Company",
+    "companyItem1": "Our Story",
+    "companyItem2": "The Fleet",
+    "companyItem3": "Partner Program",
+    "companyItem4": "Press",
+    "legalTitle": "Legal",
+    "legalItem1": "Terms of Service",
+    "legalItem2": "Privacy Policy",
+    "legalItem3": "Cookie Preference",
+    "legalItem4": "Data Sovereignty",
+    "legalItem5": "Ethics Charter",
+    "bottomRow": "© 2026 Royale One Concierge. All Rights Reserved. System Integrity Confirmed."
   },
   "auth": {
     "loginTitle": "Welcome Back",
