@@ -54,10 +54,38 @@ export async function GoldStandardFooter() {
                   {t("legalItem1")}
                 </Link>
               </div>
-              <div>{t("legalItem2")}</div>
-              <div>{t("legalItem3")}</div>
-              <div>{t("legalItem4")}</div>
-              <div>{t("legalItem5")}</div>
+              <div>
+                <Link
+                  href="/privacy-policy"
+                  className="border-b border-[rgb(var(--stroke-rgb)/0.25)] pb-0.5 transition hover:text-[var(--fg)]"
+                >
+                  {t("legalItem2")}
+                </Link>
+              </div>
+              <div>
+                <Link
+                  href="/cookie-preferences"
+                  className="border-b border-[rgb(var(--stroke-rgb)/0.25)] pb-0.5 transition hover:text-[var(--fg)]"
+                >
+                  {t("legalItem3")}
+                </Link>
+              </div>
+              <div>
+                <Link
+                  href="/data-sovereignty"
+                  className="border-b border-[rgb(var(--stroke-rgb)/0.25)] pb-0.5 transition hover:text-[var(--fg)]"
+                >
+                  {t("legalItem4")}
+                </Link>
+              </div>
+              <div>
+                <Link
+                  href="/ethics-charter"
+                  className="border-b border-[rgb(var(--stroke-rgb)/0.25)] pb-0.5 transition hover:text-[var(--fg)]"
+                >
+                  {t("legalItem5")}
+                </Link>
+              </div>
             </div>
           </div>
         </div>

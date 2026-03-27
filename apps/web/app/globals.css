@@ -66,6 +66,15 @@
   --terms-title-shadow: 0 0 15px rgba(165, 162, 131, 0.2);
   --terms-mobile-border-alpha: 0.1;
   --terms-header-bg-rgb: 0 0 0;
+  --privacy-bg: #000000;
+  --privacy-title: #e5e3d6;
+  --privacy-subheading: #e5e3d6;
+  --privacy-body: #a5a283;
+  --privacy-return: rgb(165 162 131 / 0.6);
+  --privacy-border-rgb: 165 162 131;
+  --privacy-border-alpha: 0.1;
+  --privacy-header-bg-rgb: 0 0 0;
+  --sovereignty-text: #e5e3d6;
 }
 
 html.midnight {
@@ -133,6 +142,15 @@ html.midnight {
   --terms-title-shadow: 0 0 15px rgba(165, 162, 131, 0.2);
   --terms-mobile-border-alpha: 0.1;
   --terms-header-bg-rgb: 0 0 0;
+  --privacy-bg: #000000;
+  --privacy-title: #e5e3d6;
+  --privacy-subheading: #e5e3d6;
+  --privacy-body: #a5a283;
+  --privacy-return: rgb(165 162 131 / 0.6);
+  --privacy-border-rgb: 165 162 131;
+  --privacy-border-alpha: 0.1;
+  --privacy-header-bg-rgb: 0 0 0;
+  --sovereignty-text: #e5e3d6;
 }
 
 html.sunny {
@@ -198,6 +216,15 @@ html.sunny {
   --terms-title-shadow: none;
   --terms-mobile-border-alpha: 0.2;
   --terms-header-bg-rgb: 229 227 214;
+  --privacy-bg: #e5e3d6;
+  --privacy-title: #452821;
+  --privacy-subheading: #58562d;
+  --privacy-body: #452821;
+  --privacy-return: rgb(69 40 33 / 0.7);
+  --privacy-border-rgb: 165 162 131;
+  --privacy-border-alpha: 0.2;
+  --privacy-header-bg-rgb: 229 227 214;
+  --sovereignty-text: #452821;
 }
 
 html {

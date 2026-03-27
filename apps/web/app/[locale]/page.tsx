@@ -5,7 +5,6 @@ import { Link } from "../../i18n/navigation";
 import { BentoCard } from "../_components/BentoCard";
 import { CitizenExperienceMock } from "../_components/CitizenExperienceMock";
 import { FooterFloatingControls } from "../_components/FooterFloatingControls";
-import { GoldStandardFooter } from "../_components/GoldStandardFooter";
 import { HeroScene } from "../_components/HeroScene";
 import { HeroSceneSkeleton } from "../_components/HeroSceneSkeleton";
 import { LazySpatialSearch } from "../_components/LazySpatialSearch";
@@ -243,7 +242,6 @@ export default async function LandingPage() {
           <CitizenExperienceMock />
         </section>
 
-        <GoldStandardFooter />
       </main>
 
       <FooterFloatingControls showScrollToTop={false} />
