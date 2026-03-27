@@ -25,7 +25,7 @@
   --nav-bg-strong: rgb(255 255 255 / 0.04);
   --button-top-rgb: 205 201 168;
   --button-bottom-rgb: 145 140 105;
-  --button-fg-rgb: 255 255 255;
+  --button-fg-rgb: 0 0 0;
   --button-shadow-rgb: 196 190 145;
   --button-secondary-rgb: 255 255 255;
   --button-secondary-alpha: 0.035;
@@ -66,14 +66,14 @@
   --terms-title-shadow: 0 0 15px rgba(165, 162, 131, 0.2);
   --terms-mobile-border-alpha: 0.1;
   --terms-header-bg-rgb: 0 0 0;
-  --privacy-bg: #000000;
-  --privacy-title: #e5e3d6;
-  --privacy-subheading: #e5e3d6;
-  --privacy-body: #a5a283;
-  --privacy-return: rgb(165 162 131 / 0.6);
-  --privacy-border-rgb: 165 162 131;
-  --privacy-border-alpha: 0.1;
-  --privacy-header-bg-rgb: 0 0 0;
+  --privacy-bg: var(--terms-bg);
+  --privacy-title: var(--terms-title);
+  --privacy-subheading: var(--terms-subheading);
+  --privacy-body: var(--terms-body);
+  --privacy-return: var(--terms-return);
+  --privacy-border-rgb: var(--terms-border-rgb);
+  --privacy-border-alpha: var(--terms-border-alpha);
+  --privacy-header-bg-rgb: var(--terms-header-bg-rgb);
   --sovereignty-text: #e5e3d6;
 }
 
@@ -101,7 +101,7 @@ html.midnight {
   --nav-bg-strong: rgb(255 255 255 / 0.04);
   --button-top-rgb: 205 201 168;
   --button-bottom-rgb: 145 140 105;
-  --button-fg-rgb: 255 255 255;
+  --button-fg-rgb: 0 0 0;
   --button-shadow-rgb: 196 190 145;
   --button-secondary-rgb: 255 255 255;
   --button-secondary-alpha: 0.035;
@@ -142,14 +142,14 @@ html.midnight {
   --terms-title-shadow: 0 0 15px rgba(165, 162, 131, 0.2);
   --terms-mobile-border-alpha: 0.1;
   --terms-header-bg-rgb: 0 0 0;
-  --privacy-bg: #000000;
-  --privacy-title: #e5e3d6;
-  --privacy-subheading: #e5e3d6;
-  --privacy-body: #a5a283;
-  --privacy-return: rgb(165 162 131 / 0.6);
-  --privacy-border-rgb: 165 162 131;
-  --privacy-border-alpha: 0.1;
-  --privacy-header-bg-rgb: 0 0 0;
+  --privacy-bg: var(--terms-bg);
+  --privacy-title: var(--terms-title);
+  --privacy-subheading: var(--terms-subheading);
+  --privacy-body: var(--terms-body);
+  --privacy-return: var(--terms-return);
+  --privacy-border-rgb: var(--terms-border-rgb);
+  --privacy-border-alpha: var(--terms-border-alpha);
+  --privacy-header-bg-rgb: var(--terms-header-bg-rgb);
   --sovereignty-text: #e5e3d6;
 }
 
@@ -216,14 +216,14 @@ html.sunny {
   --terms-title-shadow: none;
   --terms-mobile-border-alpha: 0.2;
   --terms-header-bg-rgb: 229 227 214;
-  --privacy-bg: #e5e3d6;
-  --privacy-title: #452821;
-  --privacy-subheading: #58562d;
-  --privacy-body: #452821;
-  --privacy-return: rgb(69 40 33 / 0.7);
-  --privacy-border-rgb: 165 162 131;
-  --privacy-border-alpha: 0.2;
-  --privacy-header-bg-rgb: 229 227 214;
+  --privacy-bg: var(--terms-bg);
+  --privacy-title: var(--terms-title);
+  --privacy-subheading: var(--terms-subheading);
+  --privacy-body: var(--terms-body);
+  --privacy-return: var(--terms-return);
+  --privacy-border-rgb: var(--terms-border-rgb);
+  --privacy-border-alpha: var(--terms-border-alpha);
+  --privacy-header-bg-rgb: var(--terms-header-bg-rgb);
   --sovereignty-text: #452821;
 }
 

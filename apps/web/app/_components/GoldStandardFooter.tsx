@@ -1,8 +1,9 @@
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 import { Link } from "../../i18n/navigation";
 
 export async function GoldStandardFooter() {
   const t = await getTranslations("footer");
+  const locale = await getLocale();
 
   return (
     <footer className="mt-20 rounded-[36px] border border-[rgb(var(--stroke-rgb)/var(--stroke-alpha))] bg-[rgb(var(--bg-rgb))] p-8 md:p-10">
@@ -34,10 +35,34 @@ export async function GoldStandardFooter() {
               {t("companyTitle")}
             </h3>
             <div className="mt-5 space-y-3 text-sm text-[rgb(var(--muted-rgb))]">
-              <div>{t("companyItem1")}</div>
-              <div>{t("companyItem2")}</div>
+              <div>
+                <Link
+                  href="/our-story"
+                  locale={locale}
+                  className="border-b border-[rgb(var(--stroke-rgb)/0.25)] pb-0.5 transition hover:text-[var(--fg)]"
+                >
+                  {t("companyItem1")}
+                </Link>
+              </div>
+              <div>
+                <Link
+                  href="/join-the-fleet"
+                  locale={locale}
+                  className="border-b border-[rgb(var(--stroke-rgb)/0.25)] pb-0.5 transition hover:text-[var(--fg)]"
+                >
+                  {t("companyItem2")}
+                </Link>
+              </div>
               <div>{t("companyItem3")}</div>
-              <div>{t("companyItem4")}</div>
+              <div>
+                <Link
+                  href="/press"
+                  locale={locale}
+                  className="border-b border-[rgb(var(--stroke-rgb)/0.25)] pb-0.5 transition hover:text-[var(--fg)]"
+                >
+                  {t("companyItem4")}
+                </Link>
+              </div>
             </div>
           </div>
 
@@ -49,6 +74,7 @@ export async function GoldStandardFooter() {
               <div>
                 <Link
                   href="/terms-of-service"
+                  locale={locale}
                   className="border-b border-[rgb(var(--stroke-rgb)/0.25)] pb-0.5 transition hover:text-[var(--fg)]"
                 >
                   {t("legalItem1")}
@@ -57,6 +83,7 @@ export async function GoldStandardFooter() {
               <div>
                 <Link
                   href="/privacy-policy"
+                  locale={locale}
                   className="border-b border-[rgb(var(--stroke-rgb)/0.25)] pb-0.5 transition hover:text-[var(--fg)]"
                 >
                   {t("legalItem2")}
@@ -65,6 +92,7 @@ export async function GoldStandardFooter() {
               <div>
                 <Link
                   href="/cookie-preferences"
+                  locale={locale}
                   className="border-b border-[rgb(var(--stroke-rgb)/0.25)] pb-0.5 transition hover:text-[var(--fg)]"
                 >
                   {t("legalItem3")}
@@ -73,6 +101,7 @@ export async function GoldStandardFooter() {
               <div>
                 <Link
                   href="/data-sovereignty"
+                  locale={locale}
                   className="border-b border-[rgb(var(--stroke-rgb)/0.25)] pb-0.5 transition hover:text-[var(--fg)]"
                 >
                   {t("legalItem4")}
@@ -81,6 +110,7 @@ export async function GoldStandardFooter() {
               <div>
                 <Link
                   href="/ethics-charter"
+                  locale={locale}
                   className="border-b border-[rgb(var(--stroke-rgb)/0.25)] pb-0.5 transition hover:text-[var(--fg)]"
                 >
                   {t("legalItem5")}

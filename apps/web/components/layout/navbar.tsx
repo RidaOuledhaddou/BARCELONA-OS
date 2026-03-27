@@ -96,7 +96,7 @@ export function Navbar() {
             <Link
               href="/signup"
               locale={locale}
-              className="join-fleet-button hidden h-10 items-center justify-center gap-1.5 rounded-full border border-[rgb(var(--stroke-rgb)/var(--stroke-alpha))] bg-[linear-gradient(180deg,rgb(var(--button-top-rgb)),rgb(var(--button-bottom-rgb)))] px-4 text-sm font-semibold text-[rgb(var(--button-fg-rgb))] shadow-[inset_0_1px_0_rgba(255,255,255,0.22),0_14px_40px_rgb(var(--button-shadow-rgb)/0.22)] transition hover:-translate-y-0.5 hover:[filter:brightness(var(--button-hover-brightness))] md:flex"
+              className="join-fleet-button hidden h-10 items-center justify-center gap-1.5 rounded-full border border-[rgb(var(--stroke-rgb)/var(--stroke-alpha))] bg-[linear-gradient(180deg,rgb(var(--button-top-rgb)),rgb(var(--button-bottom-rgb)))] px-4 text-sm font-bold text-[rgb(var(--button-fg-rgb))] shadow-[inset_0_1px_0_rgba(255,255,255,0.22),0_14px_40px_rgb(var(--button-shadow-rgb)/0.22)] transition hover:-translate-y-0.5 hover:[filter:brightness(var(--button-hover-brightness))] md:flex"
             >
               <span>{t("signUp")}</span>
               <ArrowRight className="h-3.5 w-3.5" aria-hidden />

@@ -61,7 +61,7 @@ export default async function LandingPage() {
             <div className="mt-10 flex flex-wrap items-center gap-4">
               <Link
                 href="/login"
-                className="rounded-full border border-[rgb(var(--stroke-rgb)/var(--stroke-alpha))] bg-[linear-gradient(180deg,rgb(var(--button-top-rgb)),rgb(var(--button-bottom-rgb)))] px-7 py-3.5 text-sm font-semibold text-[rgb(var(--button-fg-rgb))] shadow-[inset_0_1px_0_rgba(255,255,255,0.22),0_0_0_1px_rgba(255,255,255,0.05),0_18px_50px_rgb(var(--button-shadow-rgb)/0.24)] transition hover:-translate-y-0.5 hover:[filter:brightness(var(--button-hover-brightness))]"
+                className="rounded-full border border-[rgb(var(--stroke-rgb)/var(--stroke-alpha))] bg-[linear-gradient(180deg,rgb(var(--button-top-rgb)),rgb(var(--button-bottom-rgb)))] px-7 py-3.5 text-sm font-bold text-[rgb(var(--button-fg-rgb))] shadow-[inset_0_1px_0_rgba(255,255,255,0.22),0_0_0_1px_rgba(255,255,255,0.05),0_18px_50px_rgb(var(--button-shadow-rgb)/0.24)] transition hover:-translate-y-0.5 hover:[filter:brightness(var(--button-hover-brightness))]"
               >
                 {tHero("primaryCta")}
               </Link>

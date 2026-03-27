@@ -119,8 +119,20 @@ export default function TermsOfServicePage() {
 
         <article
           key={language}
-          className="terms-fade mt-6 w-full rounded-[28px] border border-[rgb(var(--terms-border-rgb)/var(--terms-mobile-border-alpha))] bg-[var(--terms-bg)] p-6 sm:mt-8 sm:border-[rgb(var(--terms-border-rgb)/var(--terms-border-alpha))] sm:bg-[rgb(var(--surface-rgb)/0.04)] sm:p-7 md:p-10"
+          className="terms-fade relative mt-6 w-full rounded-[28px] border border-[rgb(var(--terms-border-rgb)/var(--terms-mobile-border-alpha))] bg-[var(--terms-bg)] p-6 sm:mt-8 sm:border-[rgb(var(--terms-border-rgb)/var(--terms-border-alpha))] sm:bg-[rgb(var(--surface-rgb)/0.04)] sm:p-7 md:p-10"
         >
+          <div className="pointer-events-none absolute right-4 top-4 h-28 w-28 opacity-25 sm:h-36 sm:w-36">
+            <svg viewBox="0 0 220 220" className="h-full w-full" fill="none" aria-hidden>
+              <circle cx="110" cy="110" r="96" stroke="rgb(88 86 45 / 0.45)" strokeWidth="1" />
+              <circle cx="110" cy="110" r="72" stroke="rgb(88 86 45 / 0.35)" strokeWidth="0.8" />
+              <path d="M110 16V204M16 110H204" stroke="rgb(88 86 45 / 0.35)" strokeWidth="0.8" />
+              <path d="M51 51L169 169M169 51L51 169" stroke="rgb(88 86 45 / 0.25)" strokeWidth="0.6" />
+              <text x="110" y="30" textAnchor="middle" fontSize="11" fill="rgb(88 86 45 / 0.45)" style={{ letterSpacing: "0.28em" }}>N</text>
+              <text x="110" y="202" textAnchor="middle" fontSize="11" fill="rgb(88 86 45 / 0.45)" style={{ letterSpacing: "0.28em" }}>S</text>
+              <text x="24" y="114" textAnchor="middle" fontSize="11" fill="rgb(88 86 45 / 0.45)" style={{ letterSpacing: "0.28em" }}>W</text>
+              <text x="196" y="114" textAnchor="middle" fontSize="11" fill="rgb(88 86 45 / 0.45)" style={{ letterSpacing: "0.28em" }}>E</text>
+            </svg>
+          </div>
           <h1
             className="text-[2.4rem] font-normal leading-[1.06] tracking-[-0.02em] text-[var(--terms-title)] [font-family:'Charnoir',var(--font-geist),serif] sm:text-[3.5rem]"
             style={{ textShadow: "var(--terms-title-shadow)" }}
