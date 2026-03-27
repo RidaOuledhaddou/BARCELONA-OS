@@ -40,57 +40,57 @@ export default async function LandingPage() {
 
   return (
     <>
-      <main className="mx-auto w-full max-w-7xl">
+      <main className="mx-auto w-full max-w-[92rem]">
         <section
           id="map-explorer"
-          className="grid items-start gap-8 pt-14 md:grid-cols-[1fr_0.78fr] md:pt-16"
+          className="section-glow grid items-start gap-10 pb-16 pt-0 md:grid-cols-[1.02fr_0.98fr] md:pt-0 lg:gap-14"
         >
-          <div className="max-w-xl">
-            <div className="inline-flex items-center gap-2 rounded-full border border-[rgb(var(--accent-rgb)/0.18)] bg-[rgb(var(--surface-rgb)/0.62)] px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-[rgb(var(--accent-rgb))]">
-              <span className="h-2 w-2 rounded-full bg-[rgb(var(--accent-rgb))]" />
+          <div className="max-w-2xl">
+            <div className="inline-flex items-center gap-2 rounded-full border border-[rgb(var(--stroke-rgb)/var(--stroke-alpha))] bg-[rgb(var(--surface-rgb)/var(--surface-alpha))] px-4 py-2 text-xs font-semibold uppercase tracking-[0.28em] text-[rgb(var(--secondary-rgb))]">
+              <span className="h-2 w-2 rounded-full bg-[rgb(var(--secondary-rgb))] shadow-[0_0_16px_rgb(var(--secondary-rgb)/0.28)]" />
               {tHero("eyebrow")}
             </div>
 
-            <h1 className="mt-6 text-5xl font-semibold leading-[0.95] text-[var(--fg)] md:text-7xl">
+            <h1 className="mt-7 max-w-4xl [font-family:var(--font-geist)] text-5xl font-semibold leading-[0.9] tracking-[-0.065em] text-[var(--fg)] md:text-7xl xl:text-[5.6rem]">
               {tHero("title")}
             </h1>
-            <p className="mt-6 max-w-xl text-base leading-8 text-[rgb(var(--fg-rgb)/0.72)] md:text-lg">
+            <p className="mt-7 max-w-xl text-base leading-8 text-[rgb(var(--muted-rgb))] md:text-lg">
               {tHero("description")}
             </p>
 
-            <div className="mt-8 flex flex-wrap items-center gap-3">
+            <div className="mt-10 flex flex-wrap items-center gap-4">
               <Link
                 href="/login"
-                className="rounded-full bg-[rgb(var(--accent-rgb))] px-6 py-3 text-sm font-semibold text-[rgb(var(--bg-rgb))] shadow-[0_16px_36px_rgba(212,175,55,0.24)] transition hover:brightness-110"
+                className="rounded-full border border-[rgb(var(--stroke-rgb)/var(--stroke-alpha))] bg-[linear-gradient(180deg,rgb(var(--button-top-rgb)),rgb(var(--button-bottom-rgb)))] px-7 py-3.5 text-sm font-semibold text-[rgb(var(--button-fg-rgb))] shadow-[inset_0_1px_0_rgba(255,255,255,0.22),0_0_0_1px_rgba(255,255,255,0.05),0_18px_50px_rgb(var(--button-shadow-rgb)/0.24)] transition hover:-translate-y-0.5 hover:[filter:brightness(var(--button-hover-brightness))]"
               >
                 {tHero("primaryCta")}
               </Link>
               <a
                 href="#taxi-fleet"
-                className="rounded-full border border-[rgb(var(--accent-rgb)/0.16)] bg-[rgb(var(--surface-rgb)/0.72)] px-6 py-3 text-sm font-semibold text-[var(--fg)] transition hover:bg-[rgb(var(--surface-strong-rgb)/0.8)]"
+                className="rounded-full border border-[rgb(var(--stroke-rgb)/var(--stroke-alpha))] bg-[rgb(var(--button-secondary-rgb)/var(--button-secondary-alpha))] px-7 py-3.5 text-sm font-semibold text-[var(--fg)] shadow-[inset_0_1px_0_rgba(255,255,255,0.08),0_12px_30px_rgba(0,0,0,0.18)] backdrop-blur-xl transition hover:-translate-y-0.5 hover:bg-[rgb(var(--button-secondary-rgb)/var(--button-secondary-hover-alpha))]"
               >
                 {tHero("secondaryCta")}
               </a>
             </div>
 
-            <div className="mt-6 text-sm text-[rgb(var(--accent-rgb))]">
+            <div className="mt-7 text-sm text-[rgb(var(--secondary-rgb))]">
               {tHero("status")}
             </div>
 
-            <div className="mt-8 grid gap-4 sm:grid-cols-2">
+            <div className="premium-grid mt-10 sm:grid-cols-2">
               {dispatchJobs.map((job) => (
                 <div
                   key={job.id}
-                  className="rounded-[24px] border border-[rgb(var(--accent-rgb)/0.16)] bg-[rgb(var(--surface-rgb)/0.72)] p-4 backdrop-blur-xl"
+                  className="premium-card rounded-[28px] p-6"
                 >
-                  <div className="flex items-center justify-between text-xs uppercase tracking-[0.2em] text-[rgb(var(--accent-rgb))]">
+                  <div className="flex items-center justify-between text-xs uppercase tracking-[0.24em] text-[rgb(var(--secondary-rgb))]">
                     <span>{job.priority}</span>
                     <span>{job.etaMinutes}m ETA</span>
                   </div>
-                  <div className="mt-3 text-lg font-semibold text-[var(--fg)]">
+                  <div className="mt-4 text-xl font-semibold tracking-[-0.03em] text-[var(--fg)]">
                     {job.pickupZone} to {job.destinationZone}
                   </div>
-                  <div className="mt-2 text-sm text-[rgb(var(--fg-rgb)/0.72)]">
+                  <div className="mt-3 text-sm text-[rgb(var(--muted-rgb))]">
                     Passenger {job.passengerName}
                   </div>
                 </div>
@@ -114,20 +114,20 @@ export default async function LandingPage() {
           ]}
         />
 
-        <section id="taxi-fleet" className="mt-16">
+        <section id="taxi-fleet" className="section-glow mt-20">
           <div className="max-w-2xl">
-            <div className="text-xs font-semibold uppercase tracking-[0.28em] text-[rgb(var(--accent-rgb))]">
+            <div className="text-xs font-semibold uppercase tracking-[0.32em] text-[rgb(var(--secondary-rgb))]">
               Platform
             </div>
-            <h2 className="mt-4 text-3xl font-semibold text-[var(--fg)] md:text-4xl">
+            <h2 className="mt-5 text-3xl font-semibold tracking-[-0.04em] text-[var(--fg)] md:text-5xl">
               {tFeatures("title")}
             </h2>
-            <p className="mt-4 text-base leading-7 text-[rgb(var(--fg-rgb)/0.72)]">
+            <p className="mt-5 max-w-xl text-base leading-8 text-[rgb(var(--muted-rgb))]">
               {tFeatures("description")}
             </p>
           </div>
 
-          <div className="mt-8 grid gap-6 lg:grid-cols-[1.1fr_0.9fr_0.9fr]">
+          <div className="premium-grid mt-10 lg:grid-cols-[1.1fr_0.9fr_0.9fr]">
             <BentoCard
               icon="taxis"
               title={tFeatures("taxis.title")}
@@ -146,11 +146,11 @@ export default async function LandingPage() {
           </div>
         </section>
 
-        <section className="mt-16">
+        <section className="mt-20">
           <LazySpatialSearch />
         </section>
 
-        <section className="mt-16">
+        <section className="mt-20">
           <CitizenExperienceMock />
         </section>
 

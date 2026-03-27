@@ -60,19 +60,22 @@ importers:
         version: 0.183.2
     devDependencies:
       '@tailwindcss/postcss':
-        specifier: '*'
+        specifier: ^4.2.2
         version: 4.2.2
       '@types/node':
-        specifier: '*'
+        specifier: ^25.5.0
         version: 25.5.0
       '@types/react':
-        specifier: '*'
+        specifier: ^19.2.14
         version: 19.2.14
       '@types/react-dom':
-        specifier: '*'
+        specifier: ^19.2.3
         version: 19.2.3(@types/react@19.2.14)
+      '@types/three':
+        specifier: ^0.183.1
+        version: 0.183.1
       tailwindcss:
-        specifier: '*'
+        specifier: ^4.2.2
         version: 4.2.2
 
   packages/database: {}

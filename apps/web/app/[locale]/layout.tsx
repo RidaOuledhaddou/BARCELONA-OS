@@ -28,7 +28,7 @@ export default async function LocaleLayout({
   return (
     <NextIntlClientProvider messages={messages}>
       <Navbar />
-      <div className="px-4 pb-24 pt-16 sm:px-6 md:pt-16">{children}</div>
+      <div className="px-5 pb-32 pt-20 sm:px-8 md:pt-24">{children}</div>
     </NextIntlClientProvider>
   );
 }

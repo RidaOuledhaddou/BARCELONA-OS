@@ -12,11 +12,11 @@ export interface ButtonProps
 
 const variantClasses: Record<ButtonVariant, string> = {
   primary:
-    "bg-[rgb(var(--accent-rgb))] text-[rgb(var(--bg-rgb))] shadow-[0_16px_40px_rgba(212,175,55,0.22)] hover:brightness-110",
+    "border border-[rgb(var(--stroke-rgb)/var(--stroke-alpha))] bg-[linear-gradient(180deg,rgb(var(--button-top-rgb)),rgb(var(--button-bottom-rgb)))] text-[rgb(var(--button-fg-rgb))] shadow-[inset_0_1px_0_rgba(255,255,255,0.22),0_0_0_1px_rgba(255,255,255,0.05),0_18px_50px_rgb(var(--button-shadow-rgb)/0.24)] hover:-translate-y-0.5 hover:[filter:brightness(var(--button-hover-brightness))]",
   secondary:
-    "border border-[rgb(var(--accent-rgb)/0.2)] bg-[rgb(var(--surface-rgb)/0.75)] text-[var(--fg)] hover:bg-[rgb(var(--surface-rgb)/0.95)]",
+    "border border-[rgb(var(--stroke-rgb)/var(--stroke-alpha))] bg-[rgb(var(--button-secondary-rgb)/var(--button-secondary-alpha))] text-[var(--fg)] shadow-[inset_0_1px_0_rgba(255,255,255,0.08),0_12px_30px_rgba(0,0,0,0.18)] backdrop-blur-xl hover:bg-[rgb(var(--button-secondary-rgb)/var(--button-secondary-hover-alpha))] hover:-translate-y-0.5",
   ghost:
-    "bg-transparent text-[var(--fg)] hover:bg-[rgb(var(--surface-rgb)/0.65)]",
+    "bg-transparent text-[var(--fg)] hover:bg-[rgb(var(--surface-rgb)/var(--surface-alpha))]",
 };
 
 const sizeClasses: Record<ButtonSize, string> = {
@@ -32,7 +32,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       <button
         ref={ref}
         className={cn(
-          "inline-flex items-center justify-center rounded-full font-medium transition duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgb(var(--accent-rgb))] focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
+          "inline-flex items-center justify-center rounded-full font-medium transition duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgb(var(--accent-rgb))] focus-visible:ring-offset-2 focus-visible:ring-offset-[rgb(var(--bg-rgb))] disabled:pointer-events-none disabled:opacity-50",
           variantClasses[variant],
           sizeClasses[size],
           className,

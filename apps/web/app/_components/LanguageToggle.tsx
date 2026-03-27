@@ -13,7 +13,7 @@ export function LanguageToggle({ className = "" }: { className?: string }) {
   return (
     <div
       className={[
-        "glass-panel flex items-center gap-1 rounded-full border border-[rgb(var(--accent-rgb)/0.24)] p-1 text-[11px] md:text-xs",
+        "flex items-center gap-1 rounded-full border border-[rgb(var(--stroke-rgb)/var(--stroke-alpha))] bg-[rgb(var(--surface-rgb)/var(--surface-alpha))] p-1 text-[11px] backdrop-blur-xl md:text-xs",
         className,
       ].join(" ")}
       aria-label="Language switcher"
@@ -28,8 +28,8 @@ export function LanguageToggle({ className = "" }: { className?: string }) {
             className={[
               "rounded-full px-3 py-2 font-semibold uppercase tracking-[0.2em] transition",
               active
-                ? "bg-[rgb(var(--accent-rgb))] text-[rgb(var(--bg-rgb))]"
-                : "text-[rgb(var(--fg-rgb)/0.74)] hover:bg-[rgb(var(--surface-strong-rgb)/0.88)] hover:text-[var(--fg)]",
+                ? "bg-[rgb(var(--accent-rgb))] text-[rgb(var(--button-fg-rgb))] shadow-[0_10px_30px_rgb(var(--button-shadow-rgb)/0.18)]"
+                : "text-[rgb(var(--muted-rgb))] hover:bg-[rgb(var(--surface-rgb)/var(--surface-strong-alpha))] hover:text-[var(--fg)]",
             ].join(" ")}
           >
             {nextLocale}

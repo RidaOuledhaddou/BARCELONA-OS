@@ -20,7 +20,7 @@ export function ThemeToggle() {
       type="button"
       variant="secondary"
       size="icon"
-      className="relative overflow-hidden border-[rgb(var(--accent-rgb)/0.22)]"
+      className="relative overflow-hidden border-[rgb(var(--stroke-rgb)/var(--stroke-alpha))] bg-[rgb(var(--surface-rgb)/var(--surface-alpha))]"
       onClick={toggleTheme}
       aria-label={isSunny ? "Switch to midnight mode" : "Switch to sunny mode"}
     >
