@@ -58,10 +58,10 @@
   },
   "auth": {
     "loginTitle": "Welcome Back",
-    "loginBody": "Sign in to recover your command center, live dashboards, and premium city workflows.",
+    "loginBody": "Access your command center, live dashboards, and premium workflows.",
     "signupTitle": "Create Account",
     "signupBody": "Open a new operator account for taxis, hotels, and analytics.",
-    "email": "Email address",
+    "email": "Email Address",
     "password": "Password",
     "name": "Full name",
     "company": "Company",

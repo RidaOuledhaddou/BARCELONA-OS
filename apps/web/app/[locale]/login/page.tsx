@@ -56,17 +56,27 @@ export default async function LoginPage() {
           </div>
         </div>
 
-        <div className="pointer-events-none absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 md:block">
+        <div className="pointer-events-none absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 lg:block">
           <div className="cyber-divider h-[300px] w-px bg-[linear-gradient(to_bottom,transparent,rgb(var(--auth-divider-rgb)/var(--auth-divider-alpha)),transparent)]" />
         </div>
 
-        <div className="relative flex items-start justify-start py-10 pl-2 md:py-12 md:pl-0">
+        <div className="relative flex items-start justify-start py-0 lg:pl-0">
           <div className="w-full max-w-[26rem]">
-            <div className="text-[10px] font-semibold uppercase tracking-[0.4em] text-[var(--auth-primary)]">
-              Operator Sign-In
+            <div className="flex items-center justify-between gap-3">
+              <div className="text-[10px] font-semibold uppercase tracking-[0.4em] text-[var(--auth-primary)]">
+                Operator Sign-In
+              </div>
+              <div className="inline-flex items-center rounded-full border border-[rgb(var(--auth-input-border-rgb)/0.24)] bg-[rgb(var(--auth-google-bg-rgb)/0.06)] p-1 text-[10px] font-semibold uppercase tracking-[0.2em]">
+                <Link href="/login" locale="en" className="rounded-full px-2.5 py-1 text-[var(--auth-primary)] transition hover:bg-[rgb(var(--auth-google-bg-rgb)/0.12)]">
+                  EN
+                </Link>
+                <Link href="/login" locale="es" className="rounded-full px-2.5 py-1 text-[var(--auth-primary)] transition hover:bg-[rgb(var(--auth-google-bg-rgb)/0.12)]">
+                  ES
+                </Link>
+              </div>
             </div>
 
-            <form className="mt-5 space-y-4.5">
+            <form className="mt-5 space-y-4.5 auth-reveal-form">
               <div className="grid gap-3 md:grid-cols-2">
                 <div>
                   <label className="mb-2 block whitespace-nowrap text-[10px] font-medium uppercase tracking-[0.28em] text-[var(--auth-primary)]">

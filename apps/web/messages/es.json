@@ -57,11 +57,11 @@
     "about": "Barcelona City OS es una plataforma civica premium para despacho, hoteles, movilidad e inteligencia urbana."
   },
   "auth": {
-    "loginTitle": "Bienvenido de nuevo",
-    "loginBody": "Entra para recuperar tu centro de mando, paneles en vivo y flujos premium.",
+    "loginTitle": "Bienvenido",
+    "loginBody": "Accede a tu centro de mando, paneles en vivo y flujos de trabajo premium.",
     "signupTitle": "Crear cuenta",
     "signupBody": "Abre una nueva cuenta operativa para taxis, hoteles y analitica.",
-    "email": "Correo electronico",
+    "email": "Correo Electronico",
     "password": "Contrasena",
     "name": "Nombre completo",
     "company": "Compania",

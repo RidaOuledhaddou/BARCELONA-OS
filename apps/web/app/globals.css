@@ -289,6 +289,17 @@ html.sunny body::before {
   }
 }
 
+@keyframes auth-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .cyber-divider {
   transform-origin: top center;
   animation: auth-divider-draw 1.1s ease forwards;
@@ -297,6 +308,21 @@ html.sunny body::before {
 .signup-reveal {
   opacity: 0;
   animation: signup-fade-in 520ms ease forwards;
+}
+
+.auth-reveal-title {
+  opacity: 0;
+  animation: auth-reveal 520ms ease forwards;
+}
+
+.auth-reveal-cube {
+  opacity: 0;
+  animation: auth-reveal 520ms ease 120ms forwards;
+}
+
+.auth-reveal-form {
+  opacity: 0;
+  animation: auth-reveal 520ms ease 240ms forwards;
 }
 
 .cyber-cube {
