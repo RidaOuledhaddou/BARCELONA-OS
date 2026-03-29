@@ -5,7 +5,7 @@ export function AdminDashboardHome() {
   return (
     <BentoGrid layoutIdPrefix="admin-bento">
       <BentoItem colSpan={2} rowSpan={1} layoutId="admin-summary">
-        <p className="text-xs font-semibold uppercase tracking-wider text-[rgb(var(--secondary-rgb))]">
+        <p className="text-xs font-semibold uppercase tracking-wider text-[var(--fg)]">
           Summary
         </p>
         <p className="mt-2 text-sm text-[rgb(var(--muted-rgb))]">Boilerplate · wire KPIs</p>

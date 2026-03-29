@@ -135,7 +135,7 @@ export function UserJourneyChoiceCards({
         persona="user"
         title="Map · route comparison"
         baseLayer={
-          <div className="flex flex-1 items-center justify-center text-xs text-white/40">
+          <div className="flex flex-1 items-center justify-center text-xs text-[rgb(var(--muted-rgb)/0.75)]">
             Base map placeholder
           </div>
         }

@@ -79,7 +79,7 @@
    * Dashboard strip + widgets: defaults match marketing accent until [data-shell="dashboard"] overrides.
    * Modes: html.midnight (dark) · html.sunny (warm light) via ThemeToggle / time sync in theme-provider.tsx
    * Personas:
-   *   admin  — indigo / violet (City OS · trust)
+   *   sunny dashboards — elevated neutral (see html.sunny body:has([data-shell="dashboard"]))
    *   user   — rose / terracotta (Concierge · hospitality)
    *   driver — cyan / teal (Fleet · motion)
    */
@@ -87,6 +87,9 @@
   --dashboard-accent-soft-rgb: var(--accent-soft-rgb);
   --dashboard-glow-rgb: var(--accent-rgb);
   --dashboard-bg-tint-rgb: 0 0 0;
+  --surface-glass-alpha: 0.08;
+  --surface-glass-strong-alpha: 0.05;
+  --dashboard-card-radius: 1rem;
 }
 
 html.midnight {
@@ -167,6 +170,8 @@ html.midnight {
   --dashboard-accent-soft-rgb: var(--accent-soft-rgb);
   --dashboard-glow-rgb: var(--accent-rgb);
   --dashboard-bg-tint-rgb: 0 0 0;
+  --surface-glass-alpha: 0.08;
+  --surface-glass-strong-alpha: 0.05;
 }
 
 html.sunny {
@@ -245,6 +250,111 @@ html.sunny {
   --dashboard-accent-soft-rgb: var(--accent-soft-rgb);
   --dashboard-glow-rgb: var(--accent-rgb);
   --dashboard-bg-tint-rgb: 253 246 242;
+  --surface-glass-alpha: 0.08;
+  --surface-glass-strong-alpha: 0.05;
+}
+
+/*
+ * Sunny dashboards — Elevated neutral (unified canvas + defined cards)
+ * html:has(...) aligns the root canvas with body (fixes beige gutters from margin-inline).
+ * body:has(...) carries the full token set for components.
+ */
+html.sunny:has([data-shell="dashboard"]) {
+  --bg: #faf9f6;
+  --bg-rgb: 250 249 246;
+  background-color: #faf9f6;
+  color-scheme: light;
+  scrollbar-color: rgb(165 162 131 / 0.5) rgb(250 249 246);
+}
+
+html.sunny:has([data-shell="dashboard"]) ::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+html.sunny:has([data-shell="dashboard"]) ::-webkit-scrollbar-track {
+  background: rgb(250 249 246);
+}
+
+html.sunny:has([data-shell="dashboard"]) ::-webkit-scrollbar-thumb {
+  background: rgb(165 162 131 / 0.55);
+  border-radius: 999px;
+  border: 2px solid rgb(250 249 246);
+}
+
+html.sunny body:has([data-shell="dashboard"]) {
+  --bg: #faf9f6;
+  --bg-rgb: 250 249 246;
+  --fg: #452821;
+  --fg-rgb: 69 40 33;
+  --muted-rgb: 88 86 45;
+  --secondary-rgb: 88 86 45;
+  --stroke-rgb: 165 162 131;
+  --stroke-alpha: 1;
+  --accent: #58562d;
+  --accent-rgb: 88 86 45;
+  --accent-soft-rgb: 165 162 131;
+  --surface-rgb: 229 227 214;
+  --surface-strong-rgb: 250 249 246;
+  --surface-alpha: 1;
+  --surface-strong-alpha: 1;
+  --surface-heavy-alpha: 1;
+  --surface-glass-alpha: 1;
+  --surface-glass-strong-alpha: 1;
+  --card-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05);
+  --nav-bg: #e5e3d6;
+  --nav-bg-strong: #e5e3d6;
+  --button-top-rgb: 88 86 45;
+  --button-bottom-rgb: 72 70 36;
+  --button-fg-rgb: 255 255 255;
+  --button-shadow-rgb: 69 40 33;
+  --button-secondary-rgb: 250 249 246;
+  --button-secondary-alpha: 0.9;
+  --button-secondary-hover-alpha: 1;
+  --panel-blur: 6px;
+  --button-hover-brightness: 0.96;
+  --dashboard-card-radius: 0.75rem;
+}
+
+html.sunny body:has([data-shell="dashboard"])::before {
+  opacity: 0.004;
+  background-image:
+    radial-gradient(circle at 20% 20%, rgb(69 40 33 / 0.06) 0.45px, transparent 0.8px),
+    radial-gradient(circle at 80% 50%, rgb(69 40 33 / 0.04) 0.4px, transparent 0.75px);
+  background-size: 24px 24px, 32px 32px;
+}
+
+html.sunny body:has([data-shell="dashboard"]) .dashboard-persona-surface h1 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #452821;
+}
+
+/* Flatten persona wash so the page reads as one #faf9f6 field */
+html.sunny body:has([data-shell="dashboard"]) [data-shell="dashboard"].dashboard-persona-surface {
+  border-radius: var(--dashboard-card-radius);
+  background: transparent;
+}
+
+/* “The Suite” — strong focal (#452821 + white) */
+html.sunny body:has([data-shell="dashboard"]) .dashboard-suite-link {
+  border: 1px solid #a5a283;
+  background: #452821;
+  color: #ffffff;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05);
+}
+
+html.sunny body:has([data-shell="dashboard"]) .dashboard-suite-link span {
+  color: inherit;
+}
+
+html.sunny body:has([data-shell="dashboard"]) .dashboard-suite-link .dashboard-suite-link-icon-ring {
+  border-color: rgb(255 255 255 / 0.35);
+  background: rgb(255 255 255 / 0.12);
+}
+
+html.sunny body:has([data-shell="dashboard"]) .dashboard-suite-link svg {
+  color: #ffffff;
 }
 
 /* Dashboard personas — only inside DashboardPersonaSurface (see dashboard-persona-surface.tsx) */
@@ -253,13 +363,6 @@ html.midnight [data-shell="dashboard"][data-dashboard="admin"] {
   --dashboard-accent-soft-rgb: 196 181 253;
   --dashboard-glow-rgb: 129 140 248;
   --dashboard-bg-tint-rgb: 30 27 75;
-}
-
-html.sunny [data-shell="dashboard"][data-dashboard="admin"] {
-  --dashboard-accent-rgb: 91 33 182;
-  --dashboard-accent-soft-rgb: 124 58 237;
-  --dashboard-glow-rgb: 76 29 149;
-  --dashboard-bg-tint-rgb: 245 243 255;
 }
 
 html.midnight [data-shell="dashboard"][data-dashboard="user"] {

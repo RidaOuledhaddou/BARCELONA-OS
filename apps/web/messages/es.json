@@ -2,7 +2,11 @@
   "nav": {
     "brand": "Royale One",
     "dashboardReturnSuite": "La Suite",
+    "dashboardReturnSuiteAria": "Volver a la experiencia pública de Royale One",
     "dashboardContextAria": "Espacio de trabajo",
+    "dashboardContextAriaAdmin": "Navegación City OS",
+    "dashboardContextAriaUser": "Navegación de conserjería",
+    "dashboardContextAriaDriver": "Navegación de flota",
     "dashboardsAria": "Paneles",
     "dashboardAdmin": "City OS",
     "dashboardUser": "Conserjería",

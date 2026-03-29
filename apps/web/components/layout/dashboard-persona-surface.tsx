@@ -5,7 +5,7 @@ import type { ReactNode } from "react";
 
 export type DashboardPersona = "admin" | "user" | "driver";
 
-function personaFromPathname(pathname: string): DashboardPersona {
+export function dashboardPersonaFromPathname(pathname: string): DashboardPersona {
   const segments = pathname.split("/").filter(Boolean);
   const hit = segments.find((s) => s === "admin" || s === "user" || s === "driver");
   if (hit === "user" || hit === "driver") return hit;
@@ -14,7 +14,7 @@ function personaFromPathname(pathname: string): DashboardPersona {
 
 export function DashboardPersonaSurface({ children }: { children: ReactNode }) {
   const pathname = usePathname();
-  const persona = personaFromPathname(pathname);
+  const persona = dashboardPersonaFromPathname(pathname);
 
   return (
     <div

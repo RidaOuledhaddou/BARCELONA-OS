@@ -4,7 +4,7 @@ import clsx from "clsx";
 import { LayoutGroup, motion } from "framer-motion";
 
 export const glassPanel =
-  "rounded-2xl border border-[rgb(var(--stroke-rgb)/var(--stroke-alpha))] bg-[rgb(var(--surface-rgb)/0.08)] shadow-[var(--card-shadow)] backdrop-blur-[var(--panel-blur)] backdrop-saturate-150";
+  "rounded-[var(--dashboard-card-radius)] border border-[rgb(var(--stroke-rgb)/var(--stroke-alpha))] bg-[rgb(var(--surface-rgb)/var(--surface-glass-alpha))] shadow-[var(--card-shadow)] backdrop-blur-[var(--panel-blur)] backdrop-saturate-100";
 
 type BentoGridProps = {
   children: React.ReactNode;
@@ -22,7 +22,7 @@ export function BentoGrid({
       <motion.div
         layout
         className={clsx(
-          "grid w-full gap-3 sm:gap-4 md:gap-5",
+          "grid w-full gap-4 sm:gap-5 md:gap-6",
           "grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 lg:grid-rows-[auto_auto]",
           className,
         )}
@@ -67,7 +67,7 @@ export function BentoItem({
       transition={{ type: "spring", stiffness: 320, damping: 28 }}
       className={clsx(
         glassPanel,
-        "min-h-0 p-4 md:p-5",
+        "min-h-0 p-5 md:p-6 lg:p-7",
         colSpanClass[colSpan],
         rowSpanClass[rowSpan],
         className,

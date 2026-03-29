@@ -2,7 +2,11 @@
   "nav": {
     "brand": "Royale One",
     "dashboardReturnSuite": "The Suite",
+    "dashboardReturnSuiteAria": "Return to the public Royale One experience",
     "dashboardContextAria": "Workspace",
+    "dashboardContextAriaAdmin": "City OS navigation",
+    "dashboardContextAriaUser": "Concierge navigation",
+    "dashboardContextAriaDriver": "Fleet navigation",
     "dashboardsAria": "Dashboards",
     "dashboardAdmin": "City OS",
     "dashboardUser": "Concierge",

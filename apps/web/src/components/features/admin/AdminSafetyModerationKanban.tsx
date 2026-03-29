@@ -61,7 +61,7 @@ export function AdminSafetyModerationKanban({
   return (
     <motion.div layout className={clsx("flex flex-col gap-6", className)}>
       <div>
-        <h2 className="text-sm font-semibold uppercase tracking-[0.2em] text-[rgb(var(--secondary-rgb))]">
+        <h2 className="text-sm font-semibold uppercase tracking-[0.2em] text-[var(--fg)]">
           Moderation
         </h2>
         <p className="mt-1 text-xs text-[rgb(var(--muted-rgb)/0.85)]">
@@ -72,23 +72,23 @@ export function AdminSafetyModerationKanban({
           {MODERATION_LANES.map((lane) => (
             <section
               key={lane}
-              className="flex min-h-[280px] flex-col rounded-xl border border-[rgb(var(--stroke-rgb)/var(--stroke-alpha))] bg-[rgb(var(--surface-rgb)/0.06)] backdrop-blur-[var(--panel-blur)] backdrop-saturate-150"
+              className="flex min-h-[280px] flex-col rounded-[var(--dashboard-card-radius)] border border-[rgb(var(--stroke-rgb)/var(--stroke-alpha))] bg-[rgb(var(--surface-rgb)/var(--surface-glass-strong-alpha))] shadow-[var(--card-shadow)] backdrop-blur-[var(--panel-blur)] backdrop-saturate-100"
             >
-              <header className="border-b border-[rgb(var(--stroke-rgb)/0.08)] px-3 py-2">
+              <header className="border-b border-[rgb(var(--stroke-rgb)/var(--stroke-alpha))] px-4 py-3">
                 <h3 className="text-[11px] font-bold uppercase tracking-wider text-[var(--fg)]">
                   {lane}
                 </h3>
-                <p className="text-[10px] text-[rgb(var(--muted-rgb)/0.75)]">
+                <p className="text-[10px] text-[rgb(var(--muted-rgb)/0.85)]">
                   {grouped[lane].length} open
                 </p>
               </header>
-              <ul className="flex flex-1 flex-col gap-2 overflow-y-auto p-2">
+              <ul className="flex flex-1 flex-col gap-2.5 overflow-y-auto p-3">
                 {grouped[lane].map((r) => (
                   <li key={r.id}>
                     <button
                       type="button"
                       onClick={() => setDrawerReport(r)}
-                      className="w-full rounded-lg border border-[rgb(var(--stroke-rgb)/0.12)] bg-[rgb(var(--surface-strong-rgb)/0.04)] px-2 py-2 text-left transition hover:border-[rgb(var(--accent-rgb)/0.35)]"
+                      className="w-full rounded-lg border border-[rgb(var(--stroke-rgb)/var(--stroke-alpha))] bg-[rgb(var(--surface-strong-rgb)/var(--surface-glass-strong-alpha))] px-3 py-2.5 text-left transition hover:border-[rgb(var(--accent-rgb)/0.4)]"
                     >
                       <p className="text-[11px] font-semibold text-[var(--fg)]">
                         {r.type_label}{" "}
@@ -116,19 +116,19 @@ export function AdminSafetyModerationKanban({
       </div>
 
       <div>
-        <h2 className="text-sm font-semibold uppercase tracking-[0.2em] text-[rgb(var(--secondary-rgb))]">
+        <h2 className="text-sm font-semibold uppercase tracking-[0.2em] text-[var(--fg)]">
           Authenticity · place_scores
         </h2>
-        <div className="mt-3 overflow-x-auto rounded-xl border border-[rgb(var(--stroke-rgb)/var(--stroke-alpha))] bg-[rgb(var(--surface-rgb)/0.05)] backdrop-blur-[var(--panel-blur)] backdrop-saturate-150">
+        <div className="mt-3 overflow-x-auto rounded-[var(--dashboard-card-radius)] border border-[rgb(var(--stroke-rgb)/var(--stroke-alpha))] bg-[rgb(var(--surface-rgb)/var(--surface-glass-strong-alpha))] shadow-[var(--card-shadow)] backdrop-blur-[var(--panel-blur)] backdrop-saturate-100">
           <table className="w-full min-w-[720px] border-collapse text-left text-xs">
             <thead>
-              <tr className="border-b border-[rgb(var(--stroke-rgb)/0.12)] text-[10px] uppercase tracking-wider text-[rgb(var(--muted-rgb)/0.9)]">
-                <th className="px-3 py-2 font-semibold">Place</th>
-                <th className="px-3 py-2 font-semibold">Dimension</th>
-                <th className="px-3 py-2 font-semibold">Score</th>
-                <th className="px-3 py-2 font-semibold">rule_version</th>
-                <th className="px-3 py-2 font-semibold">calculated_at</th>
-                <th className="px-3 py-2 font-semibold">details</th>
+              <tr className="border-b border-[rgb(var(--stroke-rgb)/var(--stroke-alpha))] text-[10px] uppercase tracking-wider text-[rgb(var(--muted-rgb)/0.95)]">
+                <th className="px-4 py-3 font-semibold">Place</th>
+                <th className="px-4 py-3 font-semibold">Dimension</th>
+                <th className="px-4 py-3 font-semibold">Score</th>
+                <th className="px-4 py-3 font-semibold">rule_version</th>
+                <th className="px-4 py-3 font-semibold">calculated_at</th>
+                <th className="px-4 py-3 font-semibold">details</th>
               </tr>
             </thead>
             <tbody>
@@ -157,7 +157,7 @@ export function AdminSafetyModerationKanban({
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 48 }}
             transition={{ type: "spring", stiffness: 380, damping: 32 }}
-            className="fixed inset-y-0 right-0 z-[100] flex w-[min(100vw,420px)] flex-col border-l border-[rgb(var(--stroke-rgb)/var(--stroke-alpha))] bg-[rgb(var(--bg-rgb)/0.92)] p-5 shadow-[-24px_0_80px_rgba(0,0,0,0.45)] backdrop-blur-xl backdrop-saturate-150"
+            className="fixed inset-y-0 right-0 z-[100] flex w-[min(100vw,420px)] flex-col border-l border-[rgb(var(--stroke-rgb)/var(--stroke-alpha))] bg-[rgb(var(--bg-rgb)/0.98)] p-6 shadow-[var(--card-shadow)] backdrop-blur-xl backdrop-saturate-100"
           >
             <div className="flex items-start justify-between gap-3">
               <div>
@@ -186,7 +186,7 @@ export function AdminSafetyModerationKanban({
               <h4 className="text-[10px] font-bold uppercase tracking-wider text-[rgb(var(--muted-rgb))]">
                 pillar_extensions
               </h4>
-              <div className="mt-2 max-h-[40vh] overflow-auto rounded-lg border border-[rgb(var(--stroke-rgb)/0.1)] bg-black/20 p-3">
+              <div className="mt-2 max-h-[40vh] overflow-auto rounded-lg border border-[rgb(var(--stroke-rgb)/var(--stroke-alpha))] bg-[rgb(var(--surface-strong-rgb)/var(--surface-glass-strong-alpha))] p-4">
                 <DetailsJson value={drawerReport.pillar_extensions} />
               </div>
             </div>
@@ -208,9 +208,9 @@ function AdminPlaceScoreFragmentRow({
 }) {
   return (
     <>
-      <tr className="border-b border-[rgb(var(--stroke-rgb)/0.06)] text-[var(--fg)]">
-        <td className="px-3 py-2 font-medium">{row.place_name}</td>
-        <td className="px-3 py-2">
+      <tr className="border-b border-[rgb(var(--stroke-rgb)/var(--stroke-alpha))] text-[var(--fg)]">
+        <td className="px-4 py-3 font-medium">{row.place_name}</td>
+        <td className="px-4 py-3">
           <span className="font-mono text-[10px] text-[rgb(var(--secondary-rgb))]">
             {row.dimension_code}
           </span>{" "}
@@ -218,14 +218,14 @@ function AdminPlaceScoreFragmentRow({
             {row.dimension_label}
           </span>
         </td>
-        <td className="px-3 py-2 font-mono">{row.score.toFixed(2)}</td>
-        <td className="px-3 py-2 font-mono text-[rgb(var(--muted-rgb))]">
+        <td className="px-4 py-3 font-mono">{row.score.toFixed(2)}</td>
+        <td className="px-4 py-3 font-mono text-[rgb(var(--muted-rgb))]">
           {row.rule_version ?? "—"}
         </td>
-        <td className="px-3 py-2 font-mono text-[10px] text-[rgb(var(--muted-rgb)/0.85)]">
+        <td className="px-4 py-3 font-mono text-[10px] text-[rgb(var(--muted-rgb)/0.85)]">
           {new Date(row.calculated_at).toLocaleString()}
         </td>
-        <td className="px-3 py-2">
+        <td className="px-4 py-3">
           <button
             type="button"
             onClick={onToggle}
@@ -236,8 +236,8 @@ function AdminPlaceScoreFragmentRow({
         </td>
       </tr>
       {expanded ? (
-        <tr className="bg-[rgb(var(--surface-rgb)/0.04)]">
-          <td colSpan={6} className="px-3 py-3">
+        <tr className="bg-[rgb(var(--surface-strong-rgb)/var(--surface-glass-strong-alpha))]">
+          <td colSpan={6} className="px-4 py-4">
             <DetailsJson value={row.details} />
           </td>
         </tr>

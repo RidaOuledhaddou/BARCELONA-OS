@@ -28,12 +28,10 @@ export function SharedMapViewport({
   showOverlay = false,
   variantLabel,
 }: SharedMapViewportProps) {
-  const isUser = persona === "user";
   return (
     <div
       className={clsx(
-        "relative overflow-hidden rounded-2xl border border-[rgb(var(--stroke-rgb)/var(--stroke-alpha))] bg-[rgb(var(--surface-rgb)/0.06)] shadow-inner backdrop-blur-md backdrop-saturate-150",
-        isUser ? "" : "border-white/20 bg-zinc-900/80",
+        "relative overflow-hidden rounded-[var(--dashboard-card-radius)] border border-[rgb(var(--stroke-rgb)/var(--stroke-alpha))] bg-[rgb(var(--surface-rgb)/var(--surface-glass-strong-alpha))] shadow-inner backdrop-blur-[var(--panel-blur)] backdrop-saturate-100",
         minHeightClass,
         className,
       )}
@@ -41,27 +39,22 @@ export function SharedMapViewport({
       <div
         className={clsx(
           "absolute inset-0",
-          isUser
-            ? "bg-[radial-gradient(ellipse_at_30%_20%,rgb(var(--accent-rgb)/0.12),transparent_55%),linear-gradient(160deg,rgb(0_0_0/0.35),rgb(255_255_255/0.02))]"
-            : "bg-[radial-gradient(circle_at_70%_30%,rgb(34_211_238/0.12),transparent_50%),linear-gradient(200deg,rgb(0_0_0/0.5),rgb(255_255_255/0.03))]",
+          persona === "user"
+            ? "bg-[radial-gradient(ellipse_at_30%_20%,rgb(var(--dashboard-accent-rgb)/0.14),transparent_55%),linear-gradient(160deg,rgb(var(--fg-rgb)/0.04),transparent)]"
+            : "bg-[radial-gradient(circle_at_70%_30%,rgb(var(--dashboard-accent-rgb)/0.16),transparent_50%),linear-gradient(200deg,rgb(var(--fg-rgb)/0.03),transparent)]",
         )}
         aria-hidden
       />
       <div className={clsx("relative flex h-full flex-col p-4", minHeightClass)}>
-        <p
-          className={clsx(
-            "text-[10px] font-bold uppercase tracking-wider",
-            isUser ? "text-white/60" : "text-zinc-400",
-          )}
-        >
+        <p className="text-[10px] font-bold uppercase tracking-wider text-[rgb(var(--muted-rgb))]">
           {title}
           {variantLabel ? (
-            <span className="ml-2 font-mono font-normal normal-case opacity-70">
+            <span className="ml-2 font-mono font-normal normal-case opacity-80">
               · {variantLabel}
             </span>
           ) : null}
         </p>
-        <div className="relative mt-2 flex min-h-0 flex-1 items-stretch overflow-hidden rounded-xl border border-white/10 bg-black/25">
+        <div className="relative mt-2 flex min-h-0 flex-1 items-stretch overflow-hidden rounded-xl border border-[rgb(var(--stroke-rgb)/var(--stroke-alpha))] bg-[rgb(var(--surface-strong-rgb)/var(--surface-glass-strong-alpha))]">
           <div className="relative flex min-h-[140px] w-full flex-1">{baseLayer}</div>
           {overlay ? (
             <motion.div
