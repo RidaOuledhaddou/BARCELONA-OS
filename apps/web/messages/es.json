@@ -1,6 +1,10 @@
 {
   "nav": {
     "brand": "Royale One",
+    "dashboardsAria": "Paneles",
+    "dashboardAdmin": "City OS",
+    "dashboardUser": "Conserjería",
+    "dashboardDriver": "Flota",
     "mapExplorer": "Atlas de la Ciudad",
     "taxiFleet": "Movilidad",
     "hotels": "Hoteles",

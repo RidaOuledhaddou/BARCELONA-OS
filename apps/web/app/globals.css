@@ -75,6 +75,18 @@
   --privacy-border-alpha: var(--terms-border-alpha);
   --privacy-header-bg-rgb: var(--terms-header-bg-rgb);
   --sovereignty-text: #e5e3d6;
+  /*
+   * Dashboard strip + widgets: defaults match marketing accent until [data-shell="dashboard"] overrides.
+   * Modes: html.midnight (dark) · html.sunny (warm light) via ThemeToggle / time sync in theme-provider.tsx
+   * Personas:
+   *   admin  — indigo / violet (City OS · trust)
+   *   user   — rose / terracotta (Concierge · hospitality)
+   *   driver — cyan / teal (Fleet · motion)
+   */
+  --dashboard-accent-rgb: var(--accent-rgb);
+  --dashboard-accent-soft-rgb: var(--accent-soft-rgb);
+  --dashboard-glow-rgb: var(--accent-rgb);
+  --dashboard-bg-tint-rgb: 0 0 0;
 }
 
 html.midnight {
@@ -151,6 +163,10 @@ html.midnight {
   --privacy-border-alpha: var(--terms-border-alpha);
   --privacy-header-bg-rgb: var(--terms-header-bg-rgb);
   --sovereignty-text: #e5e3d6;
+  --dashboard-accent-rgb: var(--accent-rgb);
+  --dashboard-accent-soft-rgb: var(--accent-soft-rgb);
+  --dashboard-glow-rgb: var(--accent-rgb);
+  --dashboard-bg-tint-rgb: 0 0 0;
 }
 
 html.sunny {
@@ -225,6 +241,70 @@ html.sunny {
   --privacy-border-alpha: var(--terms-border-alpha);
   --privacy-header-bg-rgb: var(--terms-header-bg-rgb);
   --sovereignty-text: #452821;
+  --dashboard-accent-rgb: var(--accent-rgb);
+  --dashboard-accent-soft-rgb: var(--accent-soft-rgb);
+  --dashboard-glow-rgb: var(--accent-rgb);
+  --dashboard-bg-tint-rgb: 253 246 242;
+}
+
+/* Dashboard personas — only inside DashboardPersonaSurface (see dashboard-persona-surface.tsx) */
+html.midnight [data-shell="dashboard"][data-dashboard="admin"] {
+  --dashboard-accent-rgb: 167 139 250;
+  --dashboard-accent-soft-rgb: 196 181 253;
+  --dashboard-glow-rgb: 129 140 248;
+  --dashboard-bg-tint-rgb: 30 27 75;
+}
+
+html.sunny [data-shell="dashboard"][data-dashboard="admin"] {
+  --dashboard-accent-rgb: 91 33 182;
+  --dashboard-accent-soft-rgb: 124 58 237;
+  --dashboard-glow-rgb: 76 29 149;
+  --dashboard-bg-tint-rgb: 245 243 255;
+}
+
+html.midnight [data-shell="dashboard"][data-dashboard="user"] {
+  --dashboard-accent-rgb: 244 171 159;
+  --dashboard-accent-soft-rgb: 251 207 196;
+  --dashboard-glow-rgb: 225 120 99;
+  --dashboard-bg-tint-rgb: 48 32 28;
+}
+
+html.sunny [data-shell="dashboard"][data-dashboard="user"] {
+  --dashboard-accent-rgb: 180 83 9;
+  --dashboard-accent-soft-rgb: 234 88 12;
+  --dashboard-glow-rgb: 154 52 18;
+  --dashboard-bg-tint-rgb: 255 247 237;
+}
+
+html.midnight [data-shell="dashboard"][data-dashboard="driver"] {
+  --dashboard-accent-rgb: 45 212 191;
+  --dashboard-accent-soft-rgb: 94 234 212;
+  --dashboard-glow-rgb: 6 182 212;
+  --dashboard-bg-tint-rgb: 8 47 73;
+}
+
+html.sunny [data-shell="dashboard"][data-dashboard="driver"] {
+  --dashboard-accent-rgb: 13 148 136;
+  --dashboard-accent-soft-rgb: 20 184 166;
+  --dashboard-glow-rgb: 8 145 178;
+  --dashboard-bg-tint-rgb: 236 253 250;
+}
+
+[data-shell="dashboard"].dashboard-persona-surface {
+  border-radius: 1rem;
+  background: radial-gradient(
+    ellipse 120% 70% at 50% -15%,
+    rgb(var(--dashboard-bg-tint-rgb) / 0.38),
+    transparent 55%
+  );
+}
+
+html.sunny [data-shell="dashboard"].dashboard-persona-surface {
+  background: radial-gradient(
+    ellipse 100% 55% at 40% 0%,
+    rgb(var(--dashboard-bg-tint-rgb) / 0.45),
+    transparent 52%
+  );
 }
 
 html {
