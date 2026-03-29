@@ -16,16 +16,20 @@ const SOVEREIGNTY_COPY: Record<
     pageTitle: "Data Sovereignty",
     sections: [
       {
+        title: "Scope",
+        body: "This page describes our data-sovereignty commitments for Royale One services as they are built and operated. This marketing website alone does not move trip or payment data through a live backend visible here; processing today is limited as described in the Privacy Policy. The principles below apply to the full Suite once corresponding infrastructure is deployed.",
+      },
+      {
         title: "Jurisdiction",
-        body: "Local Sovereignty. Your movements are governed by Barcelona and EU GDPR laws. We do not export your identity to borderless clouds.",
+        body: "We design processing to align with EU and Spanish law, including the GDPR, for personal data we control. We avoid unnecessary transfers outside adequate jurisdictions.",
       },
       {
         title: "Infrastructure",
-        body: "On-Premise Integrity. Data is stored within secure European clusters. We utilize zero-knowledge architecture: your route history is yours alone.",
+        body: "For production workloads, we target hosting and providers in the European Economic Area or equivalent safeguards. Architectural choices (including strong access control and minimization) are implemented as engineering milestones land—not every claim on this page describes the current static site.",
       },
       {
-        title: "Command",
-        body: "Absolute Revocation. You hold the master key. Request total erasure or data portability at any moment. Your digital footprint is your property.",
+        title: "Your control",
+        body: "You may request access, portability, correction, or erasure of personal data we hold, subject to law and legitimate retention needs. Contact us through channels provided on the site.",
       },
     ],
   },
@@ -33,16 +37,20 @@ const SOVEREIGNTY_COPY: Record<
     pageTitle: "Soberania de Datos",
     sections: [
       {
+        title: "Alcance",
+        body: "Esta página describe los compromisos de soberanía de datos de los servicios Royale One a medida que se construyen y operan. Este sitio de marketing por sí solo no mueve datos de trayectos o pagos a través de un backend en vivo aquí; el tratamiento hoy es limitado según la Política de Privacidad. Los principios siguientes se aplican a la Suite completa cuando la infraestructura correspondiente esté desplegada.",
+      },
+      {
         title: "Jurisdiccion",
-        body: "Soberania Local. Sus movimientos se rigen por las leyes de Barcelona y el RGPD de la UE. No exportamos su identidad a nubes sin fronteras.",
+        body: "Diseñamos el tratamiento para alinearlo con la ley de la UE y España, incluido el RGPD, respecto de los datos personales que controlamos. Evitamos transferencias innecesarias fuera de jurisdicciones adecuadas.",
       },
       {
         title: "Infraestructura",
-        body: "Integridad Localizada. Los datos se almacenan en clusters europeos seguros. Utilizamos arquitectura de conocimiento cero: su historial es solo suyo.",
+        body: "Para cargas de producción, apuntamos a alojamiento y proveedores en el Espacio Económico Europeo o salvaguardas equivalentes. Las decisiones arquitectónicas (incluido control de acceso fuerte y minimización) se implementan a medida que avanzan los hitos de ingeniería—no cada afirmación de esta página describe el sitio estático actual.",
       },
       {
-        title: "Mando",
-        body: "Revocacion Absoluta. Usted posee la llave maestra. Solicite la eliminacion total o la portabilidad de sus datos en cualquier momento.",
+        title: "Su control",
+        body: "Puede solicitar acceso, portabilidad, rectificación o supresión de los datos personales que tratemos, con sujeción a la ley y necesidades legítimas de conservación. Contacte a través de los canales indicados en el sitio.",
       },
     ],
   },

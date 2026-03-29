@@ -15,14 +15,14 @@
     "primaryCta": "Iniciar Consulta",
     "secondaryCta": "Explorar la Suite",
     "status": "Barcelona inspira cada detalle. Precision serena en cada recorrido.",
-    "syncPrimary": "Sincronia Absoluta",
+    "syncPrimary": "Servicio coordinado",
     "syncSecondary": "Vantage Royale",
     "sunnyPrimary": "Sincronía Maestra",
     "sunnySecondary": "Ritmo Barcelona"
   },
   "features": {
     "title": "Servicios a medida. Una sola vision orquestada.",
-    "description": "Conciergerie urbana con exclusividad, legado y precision.",
+    "description": "Conciergerie urbana con exclusividad y precision.",
     "taxis": {
       "title": "Movilidad Orquestada",
       "body": "Una perspectiva maestra de la flota mas distinguida de la ciudad, en perfecta armonia."
@@ -33,25 +33,34 @@
     },
     "analytics": {
       "title": "Prevision Ejecutiva",
-      "body": "Transformando la complejidad urbana en una inteligencia depurada y artesanal."
+      "body": "Convertir la complejidad urbana en vision clara y curada, a medida que informes y herramientas esten disponibles."
     }
   },
   "stats": {
     "activeTaxis": "Vehiculos en Movimiento",
     "dispatchTime": "Tiempo medio de llegada",
     "rooms": "Santuarios Reservados",
-    "pulse": "Pulso de la Ciudad"
+    "pulse": "Pulso de la Ciudad",
+    "illustrativeNote": "Cifras orientativas para esta experiencia de demostracion, no datos operativos en vivo."
   },
   "showcase": {
     "title": "Busqueda espacial",
     "subtitle": "Una lectura bespoke del pulso urbano",
     "placeholder": "Localice un refugio sereno en el Eixample...",
-    "result": "Seleccion Royale: Eixample Norte - llegada en 2 min"
+    "result": "Seleccion Royale: Eixample Norte - llegada en 2 min",
+    "matchLabel": "Coincidencia ilustrativa",
+    "tagPremium": "Inventario premium (vista previa)",
+    "tagMobility": "Vista previa de movilidad",
+    "spatialMatchLabel": "Coincidencia ilustrativa",
+    "spatialMatchBody": "Ejemplo unicamente: no hay disponibilidad, rutas ni datos de taxi en vivo."
   },
   "mobileMock": {
     "title": "La Perspectiva del Miembro",
     "body": "Un servicio movil sobrio y elegante, con transiciones claras entre trayecto, llegada y estancia.",
-    "notification": "Conductor llega en 2 min"
+    "notification": "Conductor llega en 2 min",
+    "arrivalEyebrow": "Notificacion de ejemplo",
+    "sampleRoute": "Recogida de ejemplo",
+    "sampleEta": "ETA de ejemplo"
   },
   "landing": {
     "provenanceTitle": "Nacido en Barcelona. Creado para lo singular.",
@@ -61,14 +70,14 @@
     "signatureStep1Title": "La Consulta",
     "signatureStep1Body": "Exprese su deseo a traves de nuestra busqueda espacial.",
     "signatureStep2Title": "La Curaduria",
-    "signatureStep2Body": "Nuestra inteligencia alinea los activos mas distinguidos de la ciudad.",
+    "signatureStep2Body": "Nuestro equipo de conserjeria y las herramientas alinean los activos mas distinguidos a medida que los servicios se despliegan.",
     "signatureStep3Title": "La Llegada",
     "signatureStep3Body": "Viva la transicion de la informacion a la distincion.",
     "testimonyEyebrow": "Reflexiones de Miembros",
     "testimonyTitle": "El Testimonio Royale",
     "testimonyQuote1": "\"La única perspectiva que comprende el pulso del Eixample tan bien como yo.\"",
     "testimonyAuthor1": "A. Ortega, Miembro Privado.",
-    "testimonyQuote2": "\"La discrecion se une a la sincronia absoluta. Una obra maestra de orquestacion urbana.\"",
+    "testimonyQuote2": "\"La discrecion se une a una coordinacion cuidada—una experiencia urbana memorable.\"",
     "testimonyAuthor2": "M. Serra, Director Ejecutivo."
   },
   "footer": {
@@ -82,8 +91,7 @@
     "companyTitle": "La Firma",
     "companyItem1": "Nuestra Historia",
     "companyItem2": "La Flota",
-    "companyItem3": "Alianzas Estratégicas",
-    "companyItem4": "Prensa",
+    "companyItem3": "Prensa",
     "legalTitle": "Legal",
     "legalItem1": "Condiciones de Uso",
     "legalItem2": "Politica de Privacidad",
@@ -94,9 +102,9 @@
   },
   "auth": {
     "loginTitle": "Bienvenido",
-    "loginBody": "Accede a tu centro de mando, paneles en vivo y flujos de trabajo premium.",
+    "loginBody": "Accede a tu cuenta. Las herramientas avanzadas para operadores se activan por fases a medida que desplegamos la plataforma.",
     "signupTitle": "Crear cuenta",
-    "signupBody": "Abre una nueva cuenta operativa para taxis, hoteles y analitica.",
+    "signupBody": "Solicita acceso operativo para movilidad, estancias e informes a medida que las funciones esten disponibles.",
     "email": "Correo Electronico",
     "password": "Contrasena",
     "name": "Nombre completo",

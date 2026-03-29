@@ -31,17 +31,17 @@ export default function SpatialSearchShowcase() {
         </div>
         <div className="rounded-[30px] border border-[rgb(var(--stroke-rgb)/var(--stroke-alpha))] bg-[rgb(var(--surface-rgb)/var(--surface-strong-alpha))] p-6">
           <div className="text-xs font-semibold uppercase tracking-[0.22em] text-[rgb(var(--secondary-rgb))]">
-            Match
+            {t("matchLabel")}
           </div>
           <div className="mt-3 text-lg font-medium tracking-[-0.03em] text-[var(--fg)]">
             {t("result")}
           </div>
           <div className="mt-5 flex flex-wrap gap-2 text-xs text-[rgb(var(--muted-rgb))]">
             <span className="rounded-full border border-[rgb(var(--stroke-rgb)/var(--stroke-alpha))] bg-[rgb(var(--surface-rgb)/var(--surface-alpha))] px-3 py-2">
-              Premium inventory
+              {t("tagPremium")}
             </span>
             <span className="rounded-full border border-[rgb(var(--stroke-rgb)/var(--stroke-alpha))] bg-[rgb(var(--surface-rgb)/var(--surface-alpha))] px-3 py-2">
-              Live taxi reach
+              {t("tagMobility")}
             </span>
           </div>
         </div>
@@ -69,10 +69,10 @@ export default function SpatialSearchShowcase() {
 
         <div className="absolute inset-x-6 bottom-6 rounded-[24px] border border-[rgb(var(--stroke-rgb)/var(--stroke-alpha))] bg-[rgb(var(--surface-rgb)/var(--surface-alpha))] px-5 py-5 backdrop-blur-xl">
           <div className="text-xs uppercase tracking-[0.2em] text-[rgb(var(--secondary-rgb))]">
-            Spatial match
+            {t("spatialMatchLabel")}
           </div>
           <div className="mt-2 text-sm leading-7 text-[rgb(var(--muted-rgb))]">
-            Eixample, 2 minutes from the active taxi lane with premium room availability.
+            {t("spatialMatchBody")}
           </div>
         </div>
       </div>

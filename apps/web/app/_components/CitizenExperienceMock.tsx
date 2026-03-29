@@ -25,7 +25,7 @@ export async function CitizenExperienceMock() {
         <div className="rounded-[30px] bg-[rgb(var(--surface-rgb)/var(--surface-alpha))] p-5 backdrop-blur-xl">
           <div className="rounded-[26px] border border-[rgb(var(--stroke-rgb)/var(--stroke-alpha))] bg-[linear-gradient(180deg,rgb(var(--secondary-rgb)/0.18),rgb(var(--secondary-rgb)/0.08))] p-5">
             <div className="text-xs uppercase tracking-[0.2em] text-[rgb(var(--secondary-rgb))]">
-              Live arrival
+              {t("arrivalEyebrow")}
             </div>
             <div className="mt-3 text-lg font-semibold tracking-[-0.03em] text-[var(--fg)]">
               {t("notification")}
@@ -34,8 +34,8 @@ export async function CitizenExperienceMock() {
           <div className="mt-5 rounded-[26px] border border-[rgb(var(--stroke-rgb)/var(--stroke-alpha))] bg-[rgb(var(--surface-rgb)/var(--surface-alpha))] p-5">
             <div className="h-40 rounded-[22px] bg-[radial-gradient(circle_at_30%_30%,rgb(var(--secondary-rgb)/0.22),rgba(0,0,0,0)),linear-gradient(180deg,rgba(255,255,255,0.05),rgba(255,255,255,0.02))]" />
             <div className="mt-4 flex items-center justify-between text-sm text-[rgb(var(--muted-rgb))]">
-              <span>Sagrada pickup</span>
-              <span>2.4 min ETA</span>
+              <span>{t("sampleRoute")}</span>
+              <span>{t("sampleEta")}</span>
             </div>
           </div>
         </div>

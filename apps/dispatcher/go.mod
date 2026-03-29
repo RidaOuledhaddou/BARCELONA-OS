@@ -1,3 +1,3 @@
-module github.com/barcelona-city-os/dispatcher
+module github.com/royale-one/dispatcher
 
 go 1.22

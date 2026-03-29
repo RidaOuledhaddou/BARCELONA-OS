@@ -85,7 +85,7 @@ export default async function LoginPage() {
                   <input
                     type="email"
                     className="h-12 w-full border-0 border-b border-[rgb(var(--auth-input-border-rgb)/var(--auth-input-border-alpha))] bg-transparent px-0 py-2.5 text-[14px] text-[var(--auth-primary)] outline-none transition placeholder:text-[var(--auth-primary)]/70 focus:border-[rgb(var(--auth-input-border-rgb)/0.92)]"
-                    placeholder="operator@barcelonaos.com"
+                    placeholder="operator@royaleone.com"
                   />
                 </div>
 

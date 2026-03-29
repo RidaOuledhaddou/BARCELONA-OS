@@ -88,7 +88,7 @@ export default async function SignupPage() {
                   <input
                     type="email"
                     className="w-full border-0 border-b border-[rgb(var(--auth-input-border-rgb)/var(--auth-input-border-alpha))] bg-transparent px-0 py-2.5 text-[14px] text-[var(--auth-primary)] outline-none transition placeholder:text-[var(--auth-primary)]/70 focus:border-[rgb(var(--auth-input-border-rgb)/0.9)] focus:shadow-[0_1px_0_0_rgba(255,255,255,0.2)]"
-                    placeholder="operator@barcelonaos.com"
+                    placeholder="operator@royaleone.com"
                   />
                 </div>
               </div>

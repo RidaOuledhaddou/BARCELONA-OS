@@ -15,14 +15,14 @@
     "primaryCta": "Begin Inquiry",
     "secondaryCta": "Explore the Suite",
     "status": "Discretion in every detail. Distinction in every move.",
-    "syncPrimary": "Absolute Synchrony",
+    "syncPrimary": "Coordinated service",
     "syncSecondary": "Royale Vantage",
     "sunnyPrimary": "Curated Grid",
     "sunnySecondary": "Barcelona Rhythm"
   },
   "features": {
     "title": "Bespoke services. One orchestrated vantage.",
-    "description": "Handcrafted concierge intelligence for mobility, habitation, and executive clarity.",
+    "description": "Handcrafted concierge service for mobility, habitation, and executive clarity.",
     "taxis": {
       "title": "Orchestrated Mobility",
       "body": "A master perspective of the city's premier fleet, moving in silent harmony."
@@ -33,25 +33,34 @@
     },
     "analytics": {
       "title": "Executive Foresight",
-      "body": "Transforming urban complexity into clear, handcrafted intelligence."
+      "body": "Turning complex city operations into clear, curated insight—delivered as reporting and tooling matures."
     }
   },
   "stats": {
     "activeTaxis": "Vessels in Motion",
     "dispatchTime": "Avg. Dispatch Time",
     "rooms": "Reserved Sanctuaries",
-    "pulse": "Urban Pulse"
+    "pulse": "Urban Pulse",
+    "illustrativeNote": "Figures shown are illustrative for this preview experience, not live operational data."
   },
   "showcase": {
     "title": "Spatial Search",
     "subtitle": "A bespoke lens over the city",
     "placeholder": "Seek a quiet retreat in Eixample...",
-    "result": "The Royale Selection: Eixample North - 2 min arrival"
+    "result": "The Royale Selection: Eixample North - 2 min arrival",
+    "matchLabel": "Illustrative match",
+    "tagPremium": "Premium inventory (preview)",
+    "tagMobility": "Mobility preview",
+    "spatialMatchLabel": "Illustrative match",
+    "spatialMatchBody": "Example only—not live availability, routing, or taxi data."
   },
   "mobileMock": {
     "title": "The Member Perspective",
     "body": "A handheld concierge moment with clear transitions between routes, arrivals, and distinguished stays.",
-    "notification": "Driver arriving in 2 min"
+    "notification": "Driver arriving in 2 min",
+    "arrivalEyebrow": "Sample notification",
+    "sampleRoute": "Example pickup",
+    "sampleEta": "Example ETA"
   },
   "landing": {
     "provenanceTitle": "Born in Barcelona. Crafted for the Individual.",
@@ -61,14 +70,14 @@
     "signatureStep1Title": "The Inquiry",
     "signatureStep1Body": "Express your desire through our spatial search.",
     "signatureStep2Title": "The Curation",
-    "signatureStep2Body": "Our intelligence aligns the city's premier assets.",
+    "signatureStep2Body": "Our concierge team and tooling align the city's premier assets as services roll out.",
     "signatureStep3Title": "The Arrival",
     "signatureStep3Body": "Experience the transition from data to distinction.",
     "testimonyEyebrow": "Member Reflections",
     "testimonyTitle": "The Royale Testimony",
     "testimonyQuote1": "\"The only vantage point that understands the pulse of Eixample as well as I do.\"",
     "testimonyAuthor1": "A. Ortega, Private Member.",
-    "testimonyQuote2": "\"Discretion meets absolute synchrony. A masterpiece of urban orchestration.\"",
+    "testimonyQuote2": "\"Discretion meets careful coordination—a memorable urban experience.\"",
     "testimonyAuthor2": "M. Serra, Executive Director."
   },
   "footer": {
@@ -82,8 +91,7 @@
     "companyTitle": "Company",
     "companyItem1": "Our Story",
     "companyItem2": "The Fleet",
-    "companyItem3": "Partner Program",
-    "companyItem4": "Press",
+    "companyItem3": "Press",
     "legalTitle": "Legal",
     "legalItem1": "Terms of Service",
     "legalItem2": "Privacy Policy",
@@ -94,9 +102,9 @@
   },
   "auth": {
     "loginTitle": "Welcome Back",
-    "loginBody": "Access your command center, live dashboards, and premium workflows.",
+    "loginBody": "Sign in to your account. Deeper operator tools and dashboards roll out over time as we ship the platform.",
     "signupTitle": "Create Account",
-    "signupBody": "Open a new operator account for taxis, hotels, and analytics.",
+    "signupBody": "Request operator access for mobility, stays, and reporting as features become available.",
     "email": "Email Address",
     "password": "Password",
     "name": "Full name",

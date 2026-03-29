@@ -1,5 +1,5 @@
 {
-  "name": "barcelona-city-os",
+  "name": "royale-one",
   "private": true,
   "packageManager": "pnpm@9.15.4",
   "workspaces": ["apps/*", "packages/*"],

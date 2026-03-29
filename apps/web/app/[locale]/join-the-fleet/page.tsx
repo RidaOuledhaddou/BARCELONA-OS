@@ -34,9 +34,9 @@ const PAPERS: PaperModule[] = [
     titleEn: "ECONOMIC SOVEREIGNTY",
     titleEs: "SOBERANÍA ECONÓMICA",
     bodyEn:
-      "Fair Exchange. We reject the 'gig-economy' volatility. Our partners enjoy guaranteed commissions, transparent earnings, and the dignity of a long-term professional alliance.",
+      "Fair Exchange. We aim to move beyond typical gig-economy volatility. Partner compensation—including commissions and how earnings are reported—is defined only in a written Fleet Partner Agreement (or equivalent) and applicable law, not by marketing copy. See Terms of Service → Fleet Partners & Compensation.",
     bodyEs:
-      "Intercambio Justo. Rechazamos la volatilidad de la 'economía gig'. Nuestros socios disfrutan de comisiones garantizadas, ganancias transparentes y la dignidad de una alianza profesional a largo plazo.",
+      "Intercambio justo. Buscamos ir más allá de la volatilidad típica de la economía gig. La retribución del socio—incluidas comisiones y cómo se informan los ingresos—solo se define en un Acuerdo de socio de flota por escrito (o equivalente) y la ley aplicable, no por textos de marketing. Véase Condiciones de uso → Socios de flota y compensación.",
   },
   {
     id: "03",
@@ -208,6 +208,22 @@ export default function JoinTheFleetPage() {
                 >
                   {isSpanish ? paper.bodyEs : paper.bodyEn}
                 </p>
+                {paper.id === "02" ? (
+                  <p
+                    className="mt-5 text-[0.95rem] font-light leading-[1.7] [font-family:'Montserrat',var(--font-geist),sans-serif]"
+                    style={{ color: descriptionColor }}
+                  >
+                    <Link
+                      href="/terms-of-service"
+                      className="border-b border-current pb-0.5 transition hover:opacity-80"
+                      style={{ color: accent }}
+                    >
+                      {isSpanish
+                        ? "Términos: socios de flota y compensación"
+                        : "Terms: Fleet partners & compensation"}
+                    </Link>
+                  </p>
+                ) : null}
               </div>
             </motion.article>
           ))}
@@ -221,7 +237,7 @@ export default function JoinTheFleetPage() {
               <span>{isSpanish ? "LLAMADA AL PROTOCOLO" : "CALL TO PROTOCOL"}</span>
             </p>
             <h3 className="mt-4 text-[2.1rem] font-bold tracking-tight [font-family:'Charnoir',var(--font-geist),serif]">
-              {isSpanish ? "CALL TO PROTOCOL" : "Inquire for Commission"}
+              {isSpanish ? "Solicitud bajo protocolo" : "Inquire for Commission"}
             </h3>
             <p
               className="mt-5 max-w-3xl text-[1.1rem] font-light leading-[1.8] [font-family:'Montserrat',var(--font-geist),sans-serif]"

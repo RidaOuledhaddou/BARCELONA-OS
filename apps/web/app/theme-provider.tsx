@@ -2,7 +2,7 @@
 
 import { createContext, useContext, useEffect, useMemo, useState } from "react";
 
-const storageKey = "barcelona-city-os-theme";
+const storageKey = "royale-one-theme";
 type ThemeName = "midnight" | "sunny";
 
 function getAstronomicalTheme() {

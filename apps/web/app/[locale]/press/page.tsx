@@ -81,7 +81,7 @@ export default function PressPage() {
             className="text-[0.64rem] uppercase tracking-[0.4em] [font-family:'Montserrat',var(--font-geist),sans-serif]"
             style={{ color: accent }}
           >
-            {isSpanish ? "[ INTELIGENCIA PÚBLICA ]" : "[ PUBLIC INTELLIGENCE ]"}
+            {isSpanish ? "[ ASUNTOS PÚBLICOS ]" : "[ PUBLIC AFFAIRS ]"}
           </span>
         </div>
 

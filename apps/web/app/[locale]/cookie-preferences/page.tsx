@@ -28,13 +28,13 @@ const COOKIE_COPY: Record<
     pageSubtitle: "Cookie Preferences",
     preludeTitle: "The Prelude",
     preludeBody:
-      "Personalize your digital footprint. We use cookies to orchestrate your experience, ensuring every interaction with the Suite is as unique as your journey.",
+      "Choose how we may store small data files in your browser. Essential cookies keep the site working; optional categories help us measure and improve the experience when those tools are enabled.",
     essentialTitle: "Essential Harmony",
     essentialBody:
-      "Strictly Necessary. These are the foundations of the Suite, enabling secure access and real-time synchrony. (Locked: Always Active)",
+      "Strictly necessary for basic site operation: security, load balancing, and remembering choices such as language or cookie consent. They do not exist to replace a live operational or dispatch system. (Locked: Always Active)",
     analyticsTitle: "Analytic Insight",
     analyticsBody:
-      "Performance. We observe city patterns to refine our dispatch precision. These cookies allow us to evolve with the city's pulse.",
+      "If enabled, helps us understand aggregate traffic and errors so we can improve the website. We do not use this category to promise live city-wide dispatch or automated routing on your device.",
     adaptationTitle: "Bespoke Adaptation",
     adaptationBody:
       "Personalization. Remember your preferred districts and habitation styles for an effortless return to the Suite.",
@@ -47,13 +47,13 @@ const COOKIE_COPY: Record<
     pageSubtitle: "Preferencias de Cookies",
     preludeTitle: "El Preludio",
     preludeBody:
-      "Personalice su huella digital. Utilizamos cookies para orquestar su experiencia, asegurando que cada interacción con la Suite sea tan única como su trayecto.",
+      "Elija cómo podemos guardar pequeños archivos en su navegador. Las cookies esenciales mantienen el sitio operativo; las categorías opcionales ayudan a medir y mejorar la experiencia cuando esas herramientas estén activas.",
     essentialTitle: "Armonía Esencial",
     essentialBody:
-      "Estrictamente Necesarias. Son los cimientos de la Suite, permitiendo el acceso seguro y la sincronía en tiempo real. (Bloqueado: Siempre Activo)",
+      "Estrictamente necesarias para el funcionamiento básico: seguridad, equilibrio de carga y recuerdo de preferencias como idioma o consentimiento de cookies. No sustituyen un sistema operativo o de despacho en vivo. (Bloqueado: Siempre Activo)",
     analyticsTitle: "Percepción Analítica",
     analyticsBody:
-      "Rendimiento. Observamos los patrones de la ciudad para refinar nuestra precisión de despacho. Estas cookies nos permiten evolucionar con el pulso urbano.",
+      "Si las activa, ayudan a entender el tráfico agregado y errores para mejorar el sitio web. Esta categoría no implica despacho urbano en tiempo real ni enrutamiento automático en su dispositivo.",
     adaptationTitle: "Adaptación a Medida",
     adaptationBody:
       "Personalización. Recuerde sus distritos preferidos y estilos de estancia para un regreso sin esfuerzo a la Suite.",

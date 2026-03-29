@@ -29,11 +29,15 @@ const TERMS_COPY: Record<
       },
       {
         title: "Mobility & Arrival",
-        body: "While we strive for absolute synchrony, external urban factors may influence arrival times. Royale One acts as your expert conductor, but cannot be held liable for the city's unpredictable tempo.",
+        body: "We strive for timely, well-coordinated arrivals. External urban factors (traffic, events, weather) may still affect timing. Royale One acts as your coordinator, but cannot be held liable for conditions outside our reasonable control.",
       },
       {
         title: "Financial Transactions",
         body: "All bespoke bookings are final. Cancellation within the 2-hour window of a 'VIP' arrival incurs the full service fee to protect the integrity of the fleet.",
+      },
+      {
+        title: "Fleet Partners & Compensation",
+        body: "Any description on our websites of commissions, earnings, fees, or economic arrangements is illustrative of our partner program goals only. No marketing copy, summary, or oral statement guarantees a particular level of income or employment status. Only a signed Fleet Partner Agreement (or equivalent written contract) together with applicable law governs compensation, classification, tax, and obligations. Prospective partners should rely on the written agreement and formal disclosures provided during onboarding—not on this site alone.",
       },
       {
         title: "Sovereign Jurisdiction",
@@ -57,11 +61,15 @@ const TERMS_COPY: Record<
       },
       {
         title: "Movilidad y Llegada",
-        body: "Aunque aspiramos a la sincronía absoluta, Royale One actúa como su director experto, pero no se responsabiliza de los ritmos imprevisibles de la ciudad.",
+        body: "Buscamos llegadas puntuales y bien coordinadas. Factores urbanos externos (tráfico, eventos, meteorología) pueden afectar los tiempos. Royale One actúa como coordinador, sin responsabilidad por circunstancias fuera de un control razonable.",
       },
       {
         title: "Transacciones Financieras",
         body: "Todas las reservas a medida son definitivas. Las cancelaciones dentro del margen de 2 horas conllevan el cargo íntegro del servicio.",
+      },
+      {
+        title: "Socios de flota y compensación",
+        body: "Cualquier descripción en nuestros sitios sobre comisiones, ingresos, honorarios o condiciones económicas es meramente ilustrativa de los objetivos del programa de socios. Ningún texto de marketing, resumen o declaración verbal garantiza un nivel concreto de ingresos ni una clasificación laboral concreta. Solo un Acuerdo de socio de flota firmado (o contrato escrito equivalente), junto con la ley aplicable, rige la compensación, la clasificación, los impuestos y las obligaciones. Los socios potenciales deben basarse en el acuerdo escrito y las divulgaciones formales del proceso de incorporación—no únicamente en este sitio.",
       },
       {
         title: "Jurisdicción Soberana",

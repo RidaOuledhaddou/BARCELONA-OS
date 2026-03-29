@@ -9,9 +9,9 @@ const geist = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Barcelona City OS",
+  title: "Royale One",
   description:
-    "Luxury city intelligence platform for taxis, hotels, maps, and analytics.",
+    "Royale One — Barcelona-rooted concierge for mobility, stays, and executive clarity.",
 };
 
 export default function RootLayout({

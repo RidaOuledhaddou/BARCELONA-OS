@@ -1,6 +1,6 @@
-# BARCELONA-OS
+# Royale One (monorepo)
 
-Recovered monorepo for Barcelona City OS.
+Public brand: **Royale One**. This repository folder may still be named `barcelona-city-os` on disk; product and package metadata use the Royale One naming strategy.
 
 ## Apps
 

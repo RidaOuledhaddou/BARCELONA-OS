@@ -1,6 +1,9 @@
 import { getLocale, getTranslations } from "next-intl/server";
 import { Link } from "../../i18n/navigation";
 
+/** Same anchors as `components/layout/navbar.tsx` — home page sections. */
+const SUITE_HOME_HASHES = ["#map-explorer", "#taxi-fleet", "#hotels", "#analytics"] as const;
+
 export async function GoldStandardFooter() {
   const t = await getTranslations("footer");
   const locale = await getLocale();
@@ -23,10 +26,19 @@ export async function GoldStandardFooter() {
               {t("suiteTitle")}
             </h3>
             <div className="mt-5 space-y-3 text-sm text-[rgb(var(--muted-rgb))]">
-              <div>{t("suiteItem1")}</div>
-              <div>{t("suiteItem2")}</div>
-              <div>{t("suiteItem3")}</div>
-              <div>{t("suiteItem4")}</div>
+              {SUITE_HOME_HASHES.map((hash, index) => {
+                const key = `suiteItem${index + 1}` as "suiteItem1" | "suiteItem2" | "suiteItem3" | "suiteItem4";
+                return (
+                  <div key={hash}>
+                    <a
+                      href={`/${locale}${hash}`}
+                      className="border-b border-[rgb(var(--stroke-rgb)/0.25)] pb-0.5 transition hover:text-[var(--fg)]"
+                    >
+                      {t(key)}
+                    </a>
+                  </div>
+                );
+              })}
             </div>
           </div>
 
@@ -53,14 +65,13 @@ export async function GoldStandardFooter() {
                   {t("companyItem2")}
                 </Link>
               </div>
-              <div>{t("companyItem3")}</div>
               <div>
                 <Link
                   href="/press"
                   locale={locale}
                   className="border-b border-[rgb(var(--stroke-rgb)/0.25)] pb-0.5 transition hover:text-[var(--fg)]"
                 >
-                  {t("companyItem4")}
+                  {t("companyItem3")}
                 </Link>
               </div>
             </div>

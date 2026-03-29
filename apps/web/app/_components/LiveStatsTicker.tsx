@@ -86,6 +86,9 @@ export function LiveStatsTicker({ items, locale }: { items: StatItem[]; locale: 
           </div>
         ))}
       </div>
+      <p className="mt-6 text-xs leading-5 text-[rgb(var(--muted-rgb))]">
+        {tStats("illustrativeNote")}
+      </p>
     </div>
   );
 }

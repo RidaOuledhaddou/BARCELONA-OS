@@ -1,109 +1,117 @@
 {
   "nav": {
-    "brand": "Barcelona OS",
+    "brand": "Royale One",
     "mapExplorer": "Mapa",
-    "taxiFleet": "Flota Taxi",
-    "hotels": "Hotels",
-    "analytics": "Analitica",
-    "signIn": "Entrar",
-    "signUp": "Registrar-se"
+    "taxiFleet": "Mobilitat",
+    "hotels": "Estades",
+    "analytics": "Prospectiva",
+    "signIn": "Acces membres",
+    "signUp": "Unir-se a la flota"
   },
   "hero": {
-    "eyebrow": "Intel.ligencia espacial urbana",
-    "title": "Barcelona, Orquestrada.",
-    "description": "Recupera la superficie de control que estaves construint: taxis en viu, descoberta d'hotels, mapes, analitica i un llenguatge visual premium per escriptori i mobil.",
-    "primaryCta": "Comencar viatge",
-    "secondaryCta": "Veure plataforma",
-    "status": "Mode nit: or sobre negre. Mode sol: or sobre pedra calida.",
-    "syncPrimary": "Sincronia Absoluta",
+    "eyebrow": "Un punt de vista de consergeria singular",
+    "title": "Barcelona, refinada.",
+    "description": "La intersecció entre intuïció humana i moviment urbà. Pensada per a qui busca singularitat en cada trajecte.",
+    "primaryCta": "Començar consulta",
+    "secondaryCta": "Explorar la Suite",
+    "status": "Discreció en cada detall. Distinció en cada moviment.",
+    "syncPrimary": "Servei coordinat",
     "syncSecondary": "Vantage Royale",
     "sunnyPrimary": "Malla Curada",
     "sunnySecondary": "Ritme Barcelona"
   },
   "features": {
-    "title": "Serveis sobre una sola capa operativa urbana",
-    "description": "Una experiencia premium centrada en mobilitat, hospitalitat i senyals de ciutat en temps real.",
+    "title": "Serveis a mida. Una sola perspectiva orquestrada.",
+    "description": "Consergeria urbana artesanal per mobilitat, estada i claredat executiva.",
     "taxis": {
-      "title": "Taxis en temps real",
-      "body": "Monitora la salut de la flota, densitat de recollides i disponibilitat de dispatch en un sol llenç viu."
+      "title": "Mobilitat orquestrada",
+      "body": "Una perspectiva mestra de la flota més distingida de la ciutat, en harmonia serena."
     },
     "hotels": {
-      "title": "Descoberta intel.ligent d'hotels",
-      "body": "Combina disponibilitat, intel.ligencia per districte i inventari premium amb una cerca espacial rapida."
+      "title": "Estada curada",
+      "body": "Estades a mida alineades amb les adreces més distingides de Barcelona."
     },
     "analytics": {
-      "title": "Analitica de ciutat",
-      "body": "Mostra demanda, ocupacio i KPI operatius en segons amb visuals d'alt nivell."
+      "title": "Prospectiva executiva",
+      "body": "Transformar la complexitat urbana en una visió clara i curada—a mesura que informes i eines estiguin disponibles."
     }
   },
   "stats": {
-    "activeTaxis": "Taxis actius",
-    "dispatchTime": "Temps mitja de dispatch",
-    "rooms": "Habitacions disponibles",
-    "pulse": "Pols de la Ciutat"
+    "activeTaxis": "Unitats en moviment",
+    "dispatchTime": "Temps mitjà d'arribada",
+    "rooms": "Santuaris reservats",
+    "pulse": "Pols urbà",
+    "illustrativeNote": "Xifres orientatives per a aquesta experiència de mostra, no dades operatives en viu."
   },
   "showcase": {
     "title": "Cerca espacial",
-    "subtitle": "Cerca semantica sobre la malla urbana",
-    "placeholder": "Hotels boutique prop d'Eixample amb taxi rapid",
-    "result": "Millor resultat: Eixample Nord - taxi en 2 min"
+    "subtitle": "Una lent bespoke sobre la ciutat",
+    "placeholder": "Cerqueu un refugi seré a l'Eixample...",
+    "result": "Selecció Royale: Eixample Nord - arribada en 2 min",
+    "matchLabel": "Coincidència il·lustrativa",
+    "tagPremium": "Inventari premium (previsualització)",
+    "tagMobility": "Previsualització de mobilitat",
+    "spatialMatchLabel": "Coincidència il·lustrativa",
+    "spatialMatchBody": "Només exemple: no hi ha disponibilitat, rutes ni dades de taxi en viu."
   },
   "mobileMock": {
-    "title": "Experiencia ciutadana",
-    "body": "Un flux mobil premium amb estat en viu i una transicio clara entre mapa, taxi i hotel.",
-    "notification": "Conductor arriba en 2 min"
+    "title": "La perspectiva del membre",
+    "body": "Un moment de consergeria a la mà amb transicions clares entre rutes, arribades i estades distingides.",
+    "notification": "Conductor arriba en 2 min",
+    "arrivalEyebrow": "Notificació d'exemple",
+    "sampleRoute": "Recollida d'exemple",
+    "sampleEta": "ETA d'exemple"
   },
   "landing": {
     "provenanceTitle": "Nascut a Barcelona. Creat per a la singularitat.",
-    "provenanceBody": "Royale One va neixer per transformar l'estandard en all bespoke. Som els arquitectes silenciosos dels trajectes mes elegants de la ciutat, amb coneixement local refinat i un tracte discret.",
+    "provenanceBody": "Royale One va néixer per transformar l'estàndard en allò bespoke. Som els arquitectes silenciosos dels trajectes més elegants de la ciutat, amb coneixement local refinat i un tracte discret.",
     "signatureEyebrow": "El Servei Signature",
-    "signatureTitle": "De la consulta a la distincio.",
-    "signatureStep1Title": "La Consulta",
-    "signatureStep1Body": "Expressi el seu desig a traves de la nostra cerca espacial.",
-    "signatureStep2Title": "La Curadoria",
-    "signatureStep2Body": "La nostra intel.ligencia alinea els actius mes distingits de la ciutat.",
-    "signatureStep3Title": "L'Arribada",
-    "signatureStep3Body": "Visqui la transicio de la informacio a la distincio.",
-    "testimonyEyebrow": "Reflexions de Membres",
-    "testimonyTitle": "El Testimoni Royale",
-    "testimonyQuote1": "\"L'unic vantage que enten el pols de l'Eixample tan be com jo.\"",
-    "testimonyAuthor1": "A. Ortega, Membre Privat.",
-    "testimonyQuote2": "\"La discrecio es troba amb la sincronia absoluta. Una obra mestra d'orquestracio urbana.\"",
-    "testimonyAuthor2": "M. Serra, Director Executiu."
+    "signatureTitle": "De la consulta a la distinció.",
+    "signatureStep1Title": "La consulta",
+    "signatureStep1Body": "Expressi el seu desig a través de la nostra cerca espacial.",
+    "signatureStep2Title": "La curadoria",
+    "signatureStep2Body": "El nostre equip de consergeria i les eines alineen els actius més distingits a mesura que es despleguen els serveis.",
+    "signatureStep3Title": "L'arribada",
+    "signatureStep3Body": "Visqui la transició de la informació a la distinció.",
+    "testimonyEyebrow": "Reflexions de membres",
+    "testimonyTitle": "El testimoni Royale",
+    "testimonyQuote1": "\"L'únic punt de vista que entén el pols de l'Eixample tan bé com jo.\"",
+    "testimonyAuthor1": "A. Ortega, membre privat.",
+    "testimonyQuote2": "\"La discreció es troba amb una coordinació acurada—una experiència urbana memorable.\"",
+    "testimonyAuthor2": "M. Serra, director executiu."
   },
   "footer": {
     "brandTitle": "Royale One",
-    "brandBody": "Refinant l'Experiencia Urbana.",
+    "brandBody": "Refinant l'Experiència Urbana.",
     "suiteTitle": "La Suite",
     "suiteItem1": "Atlas Urba",
     "suiteItem2": "Mobilitat",
-    "suiteItem3": "Residencies",
-    "suiteItem4": "Previsio",
+    "suiteItem3": "Residències",
+    "suiteItem4": "Previsió",
     "companyTitle": "Empresa",
-    "companyItem1": "La Nostra Historia",
+    "companyItem1": "La Nostra Història",
     "companyItem2": "La Flota",
-    "companyItem3": "Programa de Partners",
-    "companyItem4": "Premsa",
+    "companyItem3": "Premsa",
     "legalTitle": "Legal",
     "legalItem1": "Termes del Servei",
-    "legalItem2": "Politica de Privacitat",
-    "legalItem3": "Preferencia de Cookies",
+    "legalItem2": "Política de Privacitat",
+    "legalItem3": "Preferència de Cookies",
     "legalItem4": "Sobirania de Dades",
-    "legalItem5": "Carta Etica",
-    "bottomRow": "© 2026 Royale One Concierge. Tots els drets reservats. Integritat del Sistema Confirmada."
+    "legalItem5": "Carta Ètica",
+    "bottomRow": "© 2026 Royale One Concierge. Tots els drets reservats. Integritat del sistema confirmada."
   },
   "auth": {
     "loginTitle": "Benvingut de nou",
-    "loginBody": "Entra per recuperar el teu centre de comandament, quadres en viu i fluxos premium.",
+    "loginBody": "Entreu al vostre compte. Les eines avançades per a operadors s'activen per fases a mesura que despleguem la plataforma.",
     "signupTitle": "Crear compte",
-    "signupBody": "Obre un nou compte operatiu per a taxis, hotels i analitica.",
-    "email": "Correu electronic",
+    "signupBody": "Sol·liciteu accés operatiu per mobilitat, estades i informes quan les funcions estiguin disponibles.",
+    "email": "Correu electrònic",
     "password": "Contrasenya",
     "name": "Nom complet",
     "company": "Empresa",
     "submitLogin": "Entrar a la plataforma",
     "submitSignup": "Crear compte",
-    "switchToSignup": "Necessites un compte?",
-    "switchToLogin": "Ja tens un compte?"
+    "switchToSignup": "Necessiteu un compte?",
+    "switchToLogin": "Ja teniu un compte?"
   }
 }

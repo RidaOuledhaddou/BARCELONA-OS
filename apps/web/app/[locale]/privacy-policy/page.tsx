@@ -17,20 +17,24 @@ const PRIVACY_COPY: Record<
     pageTitle: "The Digital Sanctuary",
     sections: [
       {
+        title: "Scope & This Website",
+        body: "This Policy describes how Royale One processes personal data. This public website is primarily informational: it does not currently provide live booking, in-app payments, or full account-backed concierge services. Unless you use a feature that explicitly collects information (for example, a contact or application form), we typically process only limited technical data common to all websites—such as standard server logs and, in your browser, preferences like theme choice. Optional analytics or personalization cookies are described in Cookie Preferences and apply only if and when those tools are enabled. When member, guest, or partner services launch, we will update this Policy with additional categories (for example, precise location for trips), purposes, legal bases, and retention. Later sections also describe practices we apply or intend to apply for the full Suite.",
+      },
+      {
         title: "The Vow",
-        body: "Your privacy is our cornerstone. We do not track to sell; we observe to serve. This Sanctuary outlines how we safeguard your urban footprint.",
+        body: "Your privacy is our cornerstone. We do not build a business on selling personal data. This Sanctuary outlines how we intend to safeguard your information as services expand.",
       },
       {
-        title: "Data Curation",
-        body: "We collect only the essentials: your location for arrival precision, your device and IP signals for session security, and your preferences for bespoke habitation. Your data is encrypted at an executive grade.",
+        title: "Data We Collect",
+        body: "We collect data proportionate to what you use. On this marketing site, that may include information you voluntarily submit, technical connection data from infrastructure, and cookies you consent to under Cookie Preferences. When trip, stay, or payment features are live, we may collect additional data as disclosed at that time (for example, pickup preferences or location if you grant it). We apply encryption and access controls where they are technically deployed.",
       },
       {
-        title: "Discreet Sharing",
-        body: "We only share fragments of your journey with our vetted fleet and hotel partners to ensure a seamless transition. We never sell your identity to third-party brokers.",
+        title: "Sharing",
+        body: "When operational services exist, we may share limited personal data with vetted fleet, stay, or payment partners solely to fulfill your requests. We do not sell personal data to data brokers. Until those flows are active, partner sharing through this site is generally not applicable.",
       },
       {
-        title: "Sovereign Rights",
-        body: "Under the jurisdiction of Barcelona and the GDPR, you hold absolute sovereignty over your data. You may request its total erasure from the Suite at any moment.",
+        title: "Your Rights",
+        body: "Where the GDPR and applicable law apply, you have rights of access, rectification, erasure, restriction, portability, and objection. Contact us to exercise rights regarding data we hold. We will respond in line with legal timeframes.",
       },
     ],
     cta: "Exercise Your Rights",
@@ -39,20 +43,24 @@ const PRIVACY_COPY: Record<
     pageTitle: "El Santuario Digital",
     sections: [
       {
+        title: "Alcance y este sitio web",
+        body: "Esta Política describe cómo Royale One trata los datos personales. Este sitio público es principalmente informativo: no ofrece actualmente reservas en vivo, pagos integrales en la aplicación ni servicios de conserjería completos vinculados a cuenta. Salvo que utilice una función que recopile información de forma explícita (por ejemplo, un formulario de contacto o solicitud), solemos tratar solo datos técnicos limitados habituales en cualquier web—como registros estándar del servidor y, en su navegador, preferencias como el tema visual. Las cookies analíticas o de personalización opcionales se describen en Preferencias de cookies y solo aplican si y cuando esas herramientas estén activas. Cuando se lancen servicios para miembros, huéspedes o socios, actualizaremos esta Política con categorías adicionales (por ejemplo, ubicación precisa para trayectos), finalidades, bases legales y conservación. Las secciones siguientes describen también prácticas que aplicamos o prevémos para la Suite completa.",
+      },
+      {
         title: "El Voto",
-        body: "Su privacidad es nuestra piedra angular. No rastreamos para vender; observamos para servir. Este Santuario describe cómo salvaguardamos su huella urbana.",
+        body: "Su privacidad es nuestra piedra angular. No basamos el negocio en la venta de datos personales. Este Santuario describe cómo pretendemos proteger su información a medida que los servicios crezcan.",
       },
       {
-        title: "Curaduría de Datos",
-        body: "Recopilamos solo lo esencial: su ubicación para la precisión de llegada, señales de IP y dispositivo para la seguridad de sesión, y sus preferencias para una estancia a medida. Sus datos están cifrados con grado ejecutivo.",
+        title: "Datos que recopilamos",
+        body: "Recopilamos datos proporcionales a lo que utilice. En este sitio de marketing, puede incluir información que envíe voluntariamente, datos técnicos de conexión de la infraestructura y cookies que acepte en Preferencias de cookies. Cuando las funciones de trayecto, estancia o pago estén activas, podremos recopilar datos adicionales según se informe en ese momento (por ejemplo, preferencias de recogida o ubicación si usted la autoriza). Aplicamos cifrado y controles de acceso donde estén desplegados técnicamente.",
       },
       {
-        title: "Intercambio Discreto",
-        body: "Solo compartimos fragmentos de su trayecto con nuestra flota y socios hoteleros verificados para asegurar una transición fluida. Nunca vendemos su identidad a terceros.",
+        title: "Compartición",
+        body: "Cuando existan servicios operativos, podremos compartir datos personales limitados con socios de flota, estancia o pago auditados únicamente para ejecutar sus solicitudes. No vendemos datos personales a intermediarios de datos. Hasta que esos flujos estén activos, la compartición con socios a través de este sitio suele no ser aplicable.",
       },
       {
-        title: "Derechos Soberanos",
-        body: "Bajo la jurisdicción de Barcelona y el RGPD, usted ostenta la soberanía absoluta sobre sus datos. Puede solicitar su eliminación total de la Suite en cualquier momento.",
+        title: "Sus derechos",
+        body: "Cuando el RGPD y la ley aplicable rijan, usted tiene derechos de acceso, rectificación, supresión, limitación, portabilidad y oposición. Contacte con nosotros para ejercer derechos sobre los datos que tratemos. Responderemos en los plazos legales.",
       },
     ],
     cta: "Ejercer Sus Derechos",
